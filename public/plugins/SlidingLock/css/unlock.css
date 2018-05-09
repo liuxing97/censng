@@ -1,0 +1,48 @@
+.common {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+/*解锁背景*/
+.slide-to-unlock-bg {
+  text-align: center;
+  /*border: 1px solid #fff;*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  height: 32px!important;
+}
+/*背景内文字*/
+.slide-to-unlock-bg span {
+  position: relative;
+  z-index: 5;
+  color: #333;
+  line-height: 32px;
+  font-size: 14px;
+  display: inline-block;
+}
+/*解锁后*/
+.slide-to-unlock-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  border-radius: 3px;
+  left: 1px;
+  top: 1px;
+  height: 32px!important;
+}
+/*解锁按钮*/
+.slide-to-unlock-handle {
+  position: absolute;
+  left: 0;
+  height: 32px!important;
+  width: 30px!important;
+  top: 0;
+  border-radius: 3px;
+  /*border: 1px solid #ccc;*/
+  z-index: 6;
+  cursor: move;
+}
