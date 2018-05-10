@@ -7,7 +7,12 @@
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
+<<<<<<< HEAD
         "laravel/tinker": "~1.0"
+=======
+        "laravel/tinker": "~1.0",
+        "qcloudsms/qcloudsms_php": "^0.1.2"
+>>>>>>> a996f82fb276e04365df7b37ba916d31d011df47
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

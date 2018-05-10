@@ -1,0 +1,7 @@
+.menuItem:nth-child(5){
+    border-bottom: 2px solid #cc1212;
+}
+.pageMain{
+    background: #fff;
+    padding: 106px 36px 188px 36px;
+}

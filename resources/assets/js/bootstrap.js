@@ -29,7 +29,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * a simple convenience so we don't have to attach every token manually.
  */
 
+<<<<<<< HEAD
 let token = document.head.querySelector('meta[name="csrf-token"]');
+=======
+token = document.head.querySelector('meta[name="csrf-token"]');
+>>>>>>> a996f82fb276e04365df7b37ba916d31d011df47
 
 if (token) {
     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
