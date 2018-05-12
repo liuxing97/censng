@@ -8,6 +8,7 @@
 @endsection
 @section('pageMain')
     <!--服务类型-->
+
     <div class="serverType">
         <!--服务类型-->
         <div onclick="pageObj.scopeSwitch('web')" class="serverTypeClass serverTypeClassWeb">
@@ -41,6 +42,7 @@
             <div class="serverTypeTitle">企业策划</div>
         </div>
     </div>
+
     <!--选择服务介绍-->
     <div class="choicedAbout webServerType">
         <!--选择标题-->
