@@ -95,6 +95,127 @@
 
 {{--</div>--}}
 
+
+{{--业务范围--}}
+<div class="serverType_title">
+    <div class="lang_en">Server Scope</div>
+    <div class="t">业务范围</div>
+</div>
+<div class="serverType">
+    <!--服务类型-->
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('web')" class="serverTypeClass serverTypeClassWeb">
+            <div class="serverTypeClassLogo">
+                <img src="img/3.jpg" />
+            </div>
+            <div class="serverTypeTitle">网站开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('wechat')" class="serverTypeClass serverTypeClassWechat">
+            <div class="serverTypeClassLogo">
+                <img src="/img/4.jpg" />
+            </div>
+            <div class="serverTypeTitle">微信开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('app')" class="serverTypeClass serverTypeClassApp">
+            <div class="serverTypeClassLogo">
+                <img src="/img/6.jpg" />
+            </div>
+            <div class="serverTypeTitle">APP开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('zonghe')" class="serverTypeClass serverTypeClassZonghe">
+            <div class="serverTypeClassLogo">
+                <img src="/img/7.bmp" />
+            </div>
+            <div class="serverTypeTitle">综合开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('cehua')" class="serverTypeClass serverTypeClassCehua">
+            <div class="serverTypeClassLogo">
+                <img src="/img/8.jpg" />
+            </div>
+            <div class="serverTypeTitle">企业策划</div>
+        </div>
+    </a>
+</div>
+<style>
+    .serverType_title{
+        margin-top: 82px!important;
+        text-align: center;
+        font-size: 22px;
+        /*font-weight: bold;*/
+        color: #333;
+    }
+    .serverType_title .lang_en{
+        font-size: 22px;
+        margin-bottom: 16px;
+        letter-spacing: 3px;
+        color: darkgray;
+        display: inline-block;
+        border-bottom: 2px solid #e5e5e5;
+        padding-bottom: 12px;
+        text-indent: 3px;
+    }
+    .serverType_title .t{
+        letter-spacing: 3px;
+        text-indent: 3px;
+    }
+    .serverType{
+        margin-top: 36px;
+        text-align: center;
+        margin-bottom: 105px;
+    }
+    .serverType a{
+        text-decoration: none;
+        color: #333333;
+    }
+    .serverTypeClass:hover{
+        box-shadow: 0 0 20px #ccc!important;
+    }
+    .serverTypeClass:first-child{
+        /*box-shadow: 0 0 20px #ccc;*/
+    }
+    .serverTypeClass{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        /*border-radius: 100px;*/
+        text-align: center;
+        margin: 0 28px;
+        cursor: pointer;
+        padding: 58px 10px;
+        padding-bottom: 100px;
+        margin-bottom: 16px;
+    }
+    .serverTypeClassLogo{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        vertical-align: middle;
+        border-radius: 100px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 0 10px #e5e5e5;
+    }
+    .serverTypeTitle{
+        margin-top: 24px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .serverTypeClassLogo img{
+        width: 100%;
+    }
+
+</style>
+
+
 {{--业务核心场景--}}
 <div class="serverScene">
     {{--标题--}}
@@ -345,125 +466,6 @@
     }
 </style>
 
-
-{{--业务范围--}}
-<div class="serverType_title">
-    <div class="lang_en">Server Scope</div>
-    <div class="t">业务范围</div>
-</div>
-<div class="serverType">
-    <!--服务类型-->
-    <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('web')" class="serverTypeClass serverTypeClassWeb">
-            <div class="serverTypeClassLogo">
-                <img src="img/3.jpg" />
-            </div>
-            <div class="serverTypeTitle">网站开发</div>
-        </div>
-    </a>
-    <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('wechat')" class="serverTypeClass serverTypeClassWechat">
-            <div class="serverTypeClassLogo">
-                <img src="/img/4.jpg" />
-            </div>
-            <div class="serverTypeTitle">微信开发</div>
-        </div>
-    </a>
-    <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('app')" class="serverTypeClass serverTypeClassApp">
-            <div class="serverTypeClassLogo">
-                <img src="/img/6.jpg" />
-            </div>
-            <div class="serverTypeTitle">APP开发</div>
-        </div>
-    </a>
-    <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('zonghe')" class="serverTypeClass serverTypeClassZonghe">
-            <div class="serverTypeClassLogo">
-                <img src="/img/7.bmp" />
-            </div>
-            <div class="serverTypeTitle">综合开发</div>
-        </div>
-    </a>
-    <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('cehua')" class="serverTypeClass serverTypeClassCehua">
-            <div class="serverTypeClassLogo">
-                <img src="/img/8.jpg" />
-            </div>
-            <div class="serverTypeTitle">企业策划</div>
-        </div>
-    </a>
-</div>
-<style>
-    .serverType_title{
-        margin-top: 82px!important;
-        text-align: center;
-        font-size: 22px;
-        /*font-weight: bold;*/
-        color: #333;
-    }
-    .serverType_title .lang_en{
-        font-size: 22px;
-        margin-bottom: 16px;
-        letter-spacing: 3px;
-        color: darkgray;
-        display: inline-block;
-        border-bottom: 2px solid #e5e5e5;
-        padding-bottom: 12px;
-        text-indent: 3px;
-    }
-    .serverType_title .t{
-        letter-spacing: 3px;
-        text-indent: 3px;
-    }
-    .serverType{
-        margin-top: 36px;
-        text-align: center;
-        margin-bottom: 105px;
-    }
-    .serverType a{
-        text-decoration: none;
-        color: #333333;
-    }
-    .serverTypeClass:hover{
-        box-shadow: 0 0 20px #ccc!important;
-    }
-    .serverTypeClass:first-child{
-        /*box-shadow: 0 0 20px #ccc;*/
-    }
-    .serverTypeClass{
-        display: inline-block;
-        width: 120px;
-        height: 120px;
-        /*border-radius: 100px;*/
-        text-align: center;
-        margin: 0 28px;
-        cursor: pointer;
-        padding: 58px 10px;
-        padding-bottom: 100px;
-        margin-bottom: 16px;
-    }
-    .serverTypeClassLogo{
-        display: inline-block;
-        width: 120px;
-        height: 120px;
-        vertical-align: middle;
-        border-radius: 100px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0 0 10px #e5e5e5;
-    }
-    .serverTypeTitle{
-        margin-top: 24px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        font-weight: bold;
-    }
-    .serverTypeClassLogo img{
-        width: 100%;
-    }
-
-</style>
 <!--尾部-->
 <div class="footer">
     <p>Copyright © 2009-2018 CENSNG 西安辰象的象网络技术有限公司</p>
