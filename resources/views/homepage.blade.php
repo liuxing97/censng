@@ -466,6 +466,209 @@
     }
 </style>
 
+<<<<<<< HEAD
+=======
+
+{{--业务范围--}}
+<div class="serverType_title">
+    <div class="lang_en">Server Scope</div>
+    <div class="t">业务范围</div>
+</div>
+<div class="serverType">
+    <!--服务类型-->
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('web')" class="serverTypeClass serverTypeClassWeb">
+            <div class="serverTypeClassLogo">
+                <img src="img/3.jpg" />
+            </div>
+            <div class="serverTypeTitle">网站开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('wechat')" class="serverTypeClass serverTypeClassWechat">
+            <div class="serverTypeClassLogo">
+                <img src="/img/4.jpg" />
+            </div>
+            <div class="serverTypeTitle">微信开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('app')" class="serverTypeClass serverTypeClassApp">
+            <div class="serverTypeClassLogo">
+                <img src="/img/6.jpg" />
+            </div>
+            <div class="serverTypeTitle">APP开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('zonghe')" class="serverTypeClass serverTypeClassZonghe">
+            <div class="serverTypeClassLogo">
+                <img src="/img/7.bmp" />
+            </div>
+            <div class="serverTypeTitle">综合开发</div>
+        </div>
+    </a>
+    <a href="/serverscope">
+        <div onclick="pageObj.scopeSwitch('cehua')" class="serverTypeClass serverTypeClassCehua">
+            <div class="serverTypeClassLogo">
+                <img src="/img/8.jpg" />
+            </div>
+            <div class="serverTypeTitle">企业策划</div>
+        </div>
+    </a>
+</div>
+<style>
+    .serverType_title{
+        margin-top: 82px!important;
+        text-align: center;
+        font-size: 22px;
+        /*font-weight: bold;*/
+        color: #333;
+    }
+    .serverType_title .lang_en{
+        font-size: 22px;
+        margin-bottom: 16px;
+        letter-spacing: 3px;
+        color: darkgray;
+        display: inline-block;
+        border-bottom: 2px solid #e5e5e5;
+        padding-bottom: 12px;
+        text-indent: 3px;
+    }
+    .serverType_title .t{
+        letter-spacing: 3px;
+        text-indent: 3px;
+    }
+    .serverType{
+        margin-top: 36px;
+        text-align: center;
+        margin-bottom: 105px;
+    }
+    .serverType a{
+        text-decoration: none;
+        color: #333333;
+    }
+    .serverTypeClass:hover{
+        box-shadow: 0 0 20px #ccc!important;
+    }
+    .serverTypeClass:first-child{
+        /*box-shadow: 0 0 20px #ccc;*/
+    }
+    .serverTypeClass{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        /*border-radius: 100px;*/
+        text-align: center;
+        margin: 0 28px;
+        cursor: pointer;
+        padding: 58px 10px;
+        padding-bottom: 100px;
+        margin-bottom: 16px;
+    }
+    .serverTypeClassLogo{
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        vertical-align: middle;
+        border-radius: 100px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 0 10px #e5e5e5;
+    }
+    .serverTypeTitle{
+        margin-top: 24px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .serverTypeClassLogo img{
+        width: 100%;
+    }
+
+</style>
+
+{{--不仅仅是技术--}}
+<div class="concept">
+    <div class="concept_title">
+        <div class="lang_en">Not Only Tech</div>
+        <div class="v">不仅仅是技术</div>
+    </div>
+    <div class="about">不仅仅是技术，与业务联系起来，为您提供行业解决方案！</div>
+    <div class="mail">
+        <div class="t">致您的一封信</div>
+        <div class="c">
+            <p>尊敬的客户：</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好！不管您是不是我们的客户……</p>
+            {{--<p>正文：社会在进步，企业正在进行变革，你要主动变革，我们帮您布局</p>--}}
+            <p style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是这家公司的创业人，很高兴您打开了我们的站点，或许您是我们的客户，又或许不是，只是偶然打开了这个页面，我们都抱着无比感激的心情感谢您的到来。因为无论是否有着业务的发生，我们的设计都会被您所欣赏到，对于一家有着无比情怀的公司来讲，这就是一种成就。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长话短说，这封信中，我有三个要点想告诉您，我远道而来的客人。要点很直白：我们、技术、选择我们</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一点：‘我们’，我们是一家技术类，设计型公司，我们为您提供专业的技术服务及设计，这是我们公司的本质；希望您知道在世界上，还有着这么一家公司，他是做技术开发设计类服务的，并且，想设计到作品充满艺术，技术好到让您称赞。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二点：‘技术’，这一点不多说，我们是家性格内敛的公司，我们不敢去做我们做不了的项目，但是我们现在敞开了大门，接受您的一切业务，因为我们是优秀的，专业的团队让我们不惧挑战！</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三点：‘选择我们’，立足于技术，展望世界，从技术的角度出发，为您策划方案！这是我们的理念，希望能够打动您，期待与您的合作。</p>
+            <p>此致</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;望一同携手并进，我的朋友！</p>
+            <p style="text-align: right">西安辰象的象网络科技</p>
+        </div>
+    </div>
+</div>
+<style>
+    .concept{
+        margin: 0 auto;
+        margin-top: 82px!important;
+        text-align: center;
+        /*font-weight: bold;*/
+        color: #333;
+        min-height: 100px;
+        margin-bottom: 100px;
+        width: 90%;
+    }
+    .concept_title{
+        font-size: 22px;
+    }
+    .concept_title .lang_en{
+        font-size: 22px;
+        margin-bottom: 16px;
+        letter-spacing: 3px;
+        color: darkgray;
+        display: inline-block;
+        border-bottom: 2px solid #e5e5e5;
+        padding-bottom: 12px;
+        text-indent: 3px;
+    }
+    .concept_title .t{
+        letter-spacing: 3px;
+        text-indent: 3px;
+    }
+    .concept .about{
+        margin-top: 36px;
+    }
+    .concept .mail{
+
+    }
+    .concept .mail .t{
+        margin-top: 88px;
+
+        font-size: 18px;
+
+        font-weight: bold;
+
+        margin-bottom: 36px;
+    }
+    .concept .mail .c{
+        text-align: left;
+
+        width: 80%;
+
+        margin: 0 auto;
+    }
+    .concept .mail .c p{
+        line-height: 2em;
+        font-size: 14px;
+        /*margin: 1em 1em;*/
+    }
+</style>
+>>>>>>> 36336953e7c5fe48d1897cfc93140c4e7ef442d2
 <!--尾部-->
 <div class="footer">
     <p>Copyright © 2009-2018 CENSNG 西安辰象的象网络技术有限公司</p>
