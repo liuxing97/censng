@@ -12,7 +12,7 @@ body{
 }
 .pageMain{
     box-sizing: border-box;
-    padding: 0 80px;
+    /*padding: 0 80px;*/
     padding-top: 96px;
 }
 .advantageList{

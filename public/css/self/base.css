@@ -1,0 +1,122 @@
+.header{
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    padding-bottom: 76px;
+}
+.footer{
+    min-width: 0;
+}
+.min-menu{
+    display: none;
+    /*color: #fff;*/
+    text-align: center;
+    line-height: 92px;
+    color: #f6f6f6;
+    font-size: 18px;
+    text-indent: 6px;
+    letter-spacing: 6px;
+}
+
+.banner{
+    width: 100%;
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-bg-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.banner-container img{
+    width: auto;
+    height: auto;
+}
+
+.serverScene .a{
+    line-height: 2em;
+    margin-top: 44px!important;
+    margin-bottom: 36px!important;
+}
+.concept .about{
+    line-height: 2em!important;
+    text-indent: 3px;
+    letter-spacing: 3px;
+}
+.concept .mail{
+    padding: 0!important;
+    padding-bottom: 36px!important;
+}
+.footer .br{
+    display: none;
+}
+.min-menu .top{
+    line-height: 92px;
+}
+.min-menu ul{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .header{
+        padding-bottom: 46px;
+    }
+    .menuItem{
+        margin-bottom: 1.5em;
+    }
+    .header-main-icon{
+        display: none;
+    }
+    .banner-container img{
+        position: relative;
+        width: auto;
+        height: auto;
+        left: -100px;
+    }
+    .serverScene .a{
+        line-height: 2em;
+    }
+    .concept .mail .c{
+        width: 95%!important;
+    }
+}
+@media screen and (max-width: 360px){
+    .header{
+        min-height: 92px;
+        /*overflow: hidden;*/
+        padding-bottom: 0;
+        overflow-y: hidden;
+        display: -webkit-box;
+        -webkit-overflow-scrolling:touch;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .header::-webkit-scrollbar {display: none;}
+    .menu{
+        /*display: none;*/
+
+        width: 660px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+    }
+    .min-menu{
+        /*display: block;*/
+    }
+    .footer .br{
+        display: block;
+        margin-bottom: 12px;
+    }
+    .footer{
+        padding: 36px 20px;
+    }
+}

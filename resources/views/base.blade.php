@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/base64js.min.js"></script>
     <script type="text/javascript" src="/js/pages/common.js"></script>
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
+
     @section('myJs')
     @show
     <link href="/css/base.css" type="text/css" rel="stylesheet" />
@@ -54,7 +55,146 @@
 <!--尾部-->
 <div class="footer">
     <p>Copyright © 2009-2018 CENSNG 西安辰象的象网络技术有限公司</p>
-    <p>简称【辰象科技】 备案号：陕ICP备18006045号-1</p>
+    <p>简称【辰象科技】 备案号：<br class="br">陕ICP备18006045号-1</p>
 </div>
 </body>
 </html>
+
+<style>
+    .header{
+        min-width: 0;
+        /*overflow: hidden;*/
+    }
+    .header-main{
+        width: 100%;
+    }
+    .menu{
+        z-index: 9999;
+    }
+    .menuItem{
+        margin-bottom: 1em;
+    }
+    .header-main-icon{
+        position: relative;
+        top: -1em;
+    }
+    .pageMain{
+        width: auto;
+    }
+    .footer{
+        min-width: 0;
+    }
+    .footer .br{
+        display: none;
+    }
+    @media screen and (max-width: 600px) {
+        .header-main-icon{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 360px){
+        .header{
+            min-height: 106px!important;
+            height: 106px!important;
+            /*overflow: hidden;*/
+            padding-bottom: 0;
+            overflow-y: hidden;
+            display: -webkit-box;
+            -webkit-overflow-scrolling:touch;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden;
+            overflow-x: scroll;
+        }
+        .header::-webkit-scrollbar {display: none;}
+        .menu{
+            /*display: none;*/
+
+            width: 660px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 20px;
+        }
+        .footer .br{
+            display: block;
+            margin-bottom: 12px;
+        }
+        .footer{
+            padding: 36px 20px;
+        }
+    }
+</style>
+
+<style>
+    @media screen and (max-width: 360px){
+        .choicedTitle{
+            width: 100%;
+            line-height: 3em!important;
+        }
+        .choicedMsg p{
+            line-height: 2em;
+        }
+        .choicedMsg p span{
+            font-size: 16px;
+        }
+        /*.choicedAbout p:nth-of-type(2n){*/
+            /*background: #f9f9f9;*/
+        /*}*/
+    }
+
+</style>
+
+
+
+{{-----------------------------------------------------}}
+<style>
+    .advantageList{
+        display: none;
+    }
+    .advMobile{
+        text-align: center;
+    }
+    .advMobile .advantageBox{
+        margin: 0 18px;
+        margin-bottom: 36px;
+    }
+    .advMobile .advantageBox{
+        width: 280px;
+    }
+    .advMobile .advantageTitle{
+        width: auto;
+    }
+    @media screen and (max-width: 360px){
+        .advMobile .advantageBox{
+            /*width: 90%;*/
+        }
+    }
+</style>
+
+
+
+{{-----------------------------------------------------}}
+<style>
+    @media screen and (max-width: 360px){
+        .page{
+        background: #fff;
+        }
+        .negotiateMain{
+            display:none;
+        }
+        .negotiate_bg{
+            display: none;
+        }
+        .contactWay{
+            position: relative;
+            width: 100%;
+        }
+        .contactWay .about p{
+            color: #666!important;
+            text-shadow: none!important;
+        }
+    }
+
+</style>
+
