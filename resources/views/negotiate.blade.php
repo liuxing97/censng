@@ -16,7 +16,7 @@
 
 @section('pageMain')
     <!--背景-->
-    <div style="
+    <div class="negotiate_bg" style="
         font-family: 书体坊兰亭体;
         color: #e79c4b;
         background: #fff;

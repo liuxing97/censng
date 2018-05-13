@@ -2,16 +2,40 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+
+
     <link href="css/base.css" type="text/css" rel="stylesheet" />
     <link href="css/common.css" type="text/css" rel="stylesheet" />
     <link href="css/homepage.css" type="text/css" rel="stylesheet" />
-    <title>辰象科技</title>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/self/base.css" type="text/css" rel="stylesheet" />
+    <script>
+
+    </script>
+
+    <title>辰象建站-辰象科技</title>
 </head>
 <body>
 <!--头部-->
 <div class="header">
     <div class="header-main">
+        <div class="min-menu">
+            <div class="top">首页<span></span></div>
+            <ul>
+                <li class="min-menuItem"><a href="/">首页</a></li>
+                <li class="min-menuItem"><a href="/serverscope">业务范围</a></li>
+                <li class="min-menuItem"><a href="/advantage">我们优势</a></li>
+                {{--<li class="menuItem"><a href="/negotiate/6K+36YCJ5oup">业务洽谈</a></li>--}}
+                <li class="min-menuItem"><a href="/negotiate">业务洽谈</a></li>
+                <li class="min-menuItem"><a href="/support">支持</a></li>
+                <li style="display: none;" class="min-menuItem"><a href="baidu.com">案例</a></li>
+            </ul>
+        </div>
         <div class="menu">
             <ul class="menuUl">
                 <li class="menuItem"><a href="/">首页</a></li>
@@ -32,6 +56,7 @@
     </div>
 </div>
 <div class="banner">
+    <div class="banner-bg-box"></div>
     <div class="banner-container">
         <img src="img/banner-1.png" />
     </div>
@@ -106,7 +131,7 @@
     {{--场景列表--}}
     <div class="serverSceneList">
         {{--品牌营销--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -123,7 +148,7 @@
             </div>
         </div>
         {{--线上线下--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -140,7 +165,7 @@
             </div>
         </div>
         {{--电商方案--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -157,7 +182,7 @@
             </div>
         </div>
         {{--营销工具--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -174,7 +199,7 @@
             </div>
         </div>
         {{--多店系统--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -191,7 +216,7 @@
             </div>
         </div>
         {{--智慧门店--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -208,7 +233,7 @@
             </div>
         </div>
         {{--内部管理--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -225,7 +250,7 @@
             </div>
         </div>
         {{--新时代--}}
-        <div class="item">
+        <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
                 <img src="/img/1025.jpg" />
             </div>
@@ -353,7 +378,7 @@
 <div class="serverType">
     <!--服务类型-->
     <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('web')" class="serverTypeClass serverTypeClassWeb">
+        <div class="serverTypeClass serverTypeClassWeb">
             <div class="serverTypeClassLogo">
                 <img src="img/3.jpg" />
             </div>
@@ -361,7 +386,7 @@
         </div>
     </a>
     <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('wechat')" class="serverTypeClass serverTypeClassWechat">
+        <div class="serverTypeClass serverTypeClassWechat">
             <div class="serverTypeClassLogo">
                 <img src="/img/4.jpg" />
             </div>
@@ -369,7 +394,7 @@
         </div>
     </a>
     <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('app')" class="serverTypeClass serverTypeClassApp">
+        <div class="serverTypeClass serverTypeClassApp">
             <div class="serverTypeClassLogo">
                 <img src="/img/6.jpg" />
             </div>
@@ -377,7 +402,7 @@
         </div>
     </a>
     <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('zonghe')" class="serverTypeClass serverTypeClassZonghe">
+        <div class="serverTypeClass serverTypeClassZonghe">
             <div class="serverTypeClassLogo">
                 <img src="/img/7.bmp" />
             </div>
@@ -385,7 +410,7 @@
         </div>
     </a>
     <a href="/serverscope">
-        <div onclick="pageObj.scopeSwitch('cehua')" class="serverTypeClass serverTypeClassCehua">
+        <div class="serverTypeClass serverTypeClassCehua">
             <div class="serverTypeClassLogo">
                 <img src="/img/8.jpg" />
             </div>
@@ -560,7 +585,7 @@
 <!--尾部-->
 <div class="footer">
     <p>Copyright © 2009-2018 CENSNG 西安辰象的象网络技术有限公司</p>
-    <p>简称【辰象科技】 备案号：陕ICP备18006045号-1</p>
+    <p>简称【辰象科技】 备案号：<br class="br">陕ICP备18006045号-1</p>
 </div>
 <style>
     .header-main,.show_site-main,.service_scope-main,.contact-notice,.contact-main{
