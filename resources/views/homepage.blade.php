@@ -505,7 +505,7 @@
         color: #333;
         min-height: 100px;
         margin-bottom: 100px;
-        width: 90%;
+        /*width: 90%;*/
     }
     .concept_title{
         font-size: 22px;
@@ -528,7 +528,10 @@
         margin-top: 36px;
     }
     .concept .mail{
-
+        margin-top: 100px;
+        background: rgba(255,255,255,0.46);
+        padding: 0 20px;
+        padding-bottom: 36px;
     }
     .concept .mail .t{
         margin-top: 66px;
