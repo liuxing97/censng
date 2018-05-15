@@ -42,8 +42,11 @@
     <div class="advantageList">
         <!--专业的设计-->
         <div class="advantageBox">
-            <div class="icon"></div>
-            <div class="advantageTitle">专业设计</div>
+            <div class="advantageBoxBox">
+                <div class="icon"></div>
+                <div class="advantageTitle">专业设计</div>
+            </div>
+
             <div class="advantageMsg">
                 {{--<p>专业设计！</p>--}}
                 <p>没有金刚钻，别揽瓷器活。</p>
@@ -67,10 +70,12 @@
         </div>
     </div>
     <div class="advMobile">
-        <!--新公司-->
-        <div class="advantageBox">
-            <div class="icon"></div>
-            <div class="advantageTitle">基本情况</div>
+        <!--新公司ontouchstart-->
+        <div onclick="$('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show()" class="advantageBox f-advantageBox">
+            <div class="advantageBoxBox">
+                <div class="icon"></div>
+                <div class="advantageTitle">基本情况</div>
+            </div>
             <div class="advantageMsg">
                 <p>公司成立于2017年11月16日，是一家自认为拥有生命力的公司。</p>
                 <p>因为公司成立时间不长，是家新公司，同时再加上公司方向上对自主产品的研究上投入更深，故我们的案例作品并不是很多。</p>
@@ -79,9 +84,11 @@
             </div>
         </div>
         <!--小公司-->
-        <div class="advantageBox">
-            <div class="icon"></div>
-            <div class="advantageTitle">小公司</div>
+        <div onclick="$('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show()" class="advantageBox">
+            <div class="advantageBoxBox">
+                <div class="icon"></div>
+                <div class="advantageTitle">小公司</div>
+            </div>
             <div class="advantageMsg">
                 <p>我们是一个初创企业，因此我们极力的节省我们所需成本。</p>
                 <p>因此从内部讲，我们的公司结构，与其他公司讲，多了些特色。</p>
@@ -90,9 +97,11 @@
             </div>
         </div>
         <!--诚信创造价值-->
-        <div class="advantageBox">
-            <div class="icon"></div>
-            <div class="advantageTitle">诚信，价值</div>
+        <div onclick="$('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show()" class="advantageBox">
+            <div class="advantageBoxBox">
+                <div class="icon"></div>
+                <div class="advantageTitle">诚信，价值</div>
+            </div>
             <div class="advantageMsg">
                 <p>在进行设计的时候，我们在素材里发现了这句话。</p>
                 <p>这句话是我们一直以来说坚信的，故而重做设计结构，我们都希望将元素加入。</p>
@@ -100,9 +109,11 @@
             </div>
         </div>
         <!--专业的设计-->
-        <div class="advantageBox">
-            <div class="icon"></div>
-            <div class="advantageTitle">专业设计</div>
+        <div onclick="$('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show()" class="advantageBox">
+            <div class="advantageBoxBox">
+                <div class="icon"></div>
+                <div class="advantageTitle">专业设计</div>
+            </div>
             <div class="advantageMsg">
                 {{--<p>专业设计！</p>--}}
                 <p>没有金刚钻，别揽瓷器活。</p>
@@ -111,9 +122,11 @@
             </div>
         </div>
         <!---->
-        <div class="advantageBox">
-            <div class="icon"></div>
-            <div class="advantageTitle">沟通无忧</div>
+        <div onclick="$('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show()" class="advantageBox">
+            <div class="advantageBoxBox">
+                <div class="icon"></div>
+                <div class="advantageTitle">沟通无忧</div>
+            </div>
             <div class="advantageMsg">
                 {{--<p>专业设计！</p>--}}
                 <p>在我们所遇的各种合作中，我们深切体会到：</p>

@@ -10,6 +10,7 @@
     <link href="css/base.css" type="text/css" rel="stylesheet" />
     <link href="css/common.css" type="text/css" rel="stylesheet" />
     <link href="css/homepage.css" type="text/css" rel="stylesheet" />
+    {{--<link href="css/support.css" type="text/css" rel="stylesheet" />--}}
 
 
 
@@ -82,6 +83,12 @@
 <style>
     .header-main,.show_site-main,.service_scope-main,.contact-notice,.contact-main{
         width: 100%!important;
+    }
+    .menuItem:nth-child(1){
+        border-bottom: none;
+    }
+    .menuItem:nth-child(5){
+        border-bottom: 2px solid #fff;
     }
 </style>
 

@@ -101,11 +101,12 @@
     /*!*margin-bottom: 100px;*!*/
 /*}*/
 .goBuy{
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
     margin-top: 36px;
     border-top: 1px dashed #C7BFBF;
     text-align: right;
     padding-right: 20px;
+    padding-bottom: 100px;
 }
 .goBuyButton{
     width: 150px;
@@ -166,4 +167,18 @@
 }
 .webServerType{
     display: block;
+}
+
+@media screen and (max-width: 360px){
+    .serverType{
+        /*width: 100%;*/
+        /*overflow-x: auto;*/
+        /*overflow-y: hidden;*/
+        /*height: 328px;*/
+        margin-top: 0;
+        padding-top: 100px;
+    }
+    .serverTypeMain{
+        /*width: 1000px;*/
+    }
 }

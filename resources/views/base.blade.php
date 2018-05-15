@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/base64js.min.js"></script>
     <script type="text/javascript" src="/js/pages/common.js"></script>
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
@@ -104,14 +104,14 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
             overflow: hidden;
-            overflow-x: scroll;
+            overflow-x: auto;
         }
         .header::-webkit-scrollbar {display: none;}
         .menu{
             /*display: none;*/
 
             width: 660px;
-            overflow-x: scroll;
+            overflow-x: auto;
             overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
             padding-bottom: 20px;
@@ -153,13 +153,16 @@
         display: none;
     }
     .advMobile{
-        text-align: center;
+        text-align: left;
     }
     .advMobile .advantageBox{
         margin: 0 18px;
         margin-bottom: 36px;
     }
     .advMobile .advantageBox{
+        width: 280px;
+    }
+    .advantageBoxBox{
         width: 280px;
     }
     .advMobile .advantageTitle{
@@ -169,6 +172,22 @@
         .advMobile .advantageBox{
             /*width: 90%;*/
         }
+        .advantageBox:hover .advantageMsg{
+            position: relative;
+            top: 10px;
+        }
+        .advantageBox .icon{
+            top:48px;
+        }
+        /*.f-advantageBox .advantageBoxBox{*/
+            /*background: #d55555!important;*/
+            /*color: #fff;*/
+        /*}*/
+        /*.f-advantageBox .advantageMsg{*/
+            /*position: relative;*/
+            /*top: 10px;*/
+            /*!*display: block;*!*/
+        /*}*/
     }
 </style>
 
@@ -176,6 +195,7 @@
 
 {{-----------------------------------------------------}}
 <style>
+
     @media screen and (max-width: 360px){
         .page{
         background: #fff;
