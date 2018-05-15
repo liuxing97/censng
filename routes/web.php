@@ -11,11 +11,7 @@
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', function () {
-    return view('welcome');
-});
-=======
+
 
 Route::get('/', function () {
     return view('homepage');
@@ -61,4 +57,4 @@ Route::post('/act_negotiate', function () {
     $serverType = \Illuminate\Support\Facades\Input::get('serverType');
     $ret = $obj->save($phone,$name,$post,$codeNum,$sex,$serverType);
 });
->>>>>>> a996f82fb276e04365df7b37ba916d31d011df47
+
