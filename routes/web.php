@@ -11,11 +11,31 @@
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', function () {
-    return view('welcome');
-});
-=======
+function is_mobile()
+{
+    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    $is_pc = (strpos($agent, 'windows nt')) ? true : false;
+    $is_mac = (strpos($agent, 'mac os')) ? true : false;
+    $is_iphone = (strpos($agent, 'iphone')) ? true : false;
+    $is_android = (strpos($agent, 'android')) ? true : false;
+    $is_ipad = (strpos($agent, 'ipad')) ? true : false;
+
+    if($is_iphone){
+        return  true;
+    }
+    if($is_android){
+        return  true;
+    }
+    if($is_ipad){
+        return  true;
+    }
+    if($is_pc){
+        return  false;
+    }
+    if($is_mac){
+        return  false;
+    }
+}
 
 Route::get('/', function () {
     return view('homepage');
@@ -41,9 +61,18 @@ Route::get('/negotiate/success', function () {
 
 Route::get('/negotiate/{objtype?}', function ($objtype = null) {
 
-    return view('negotiate',[
-        'objtype'=>$objtype
-    ]);
+    if(is_mobile()){
+        return view('negotiateMobile');
+    }
+    else{
+        return view('negotiate',[
+            'objtype'=>$objtype
+        ]);
+    }
+
+});
+Route::get('/negotiateMobile', function () {
+    return view('negotiateMobile');
 });
 
 Route::get('/msg/leave_msg/{phoneNumber}', function ($phoneNumber) {
@@ -61,4 +90,3 @@ Route::post('/act_negotiate', function () {
     $serverType = \Illuminate\Support\Facades\Input::get('serverType');
     $ret = $obj->save($phone,$name,$post,$codeNum,$sex,$serverType);
 });
->>>>>>> a996f82fb276e04365df7b37ba916d31d011df47
