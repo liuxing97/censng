@@ -98,4 +98,8 @@ body{
 }
 .advMobile{
     padding-bottom: 100px;
+    text-align: center!important;
+}
+.advantageMsg{
+    text-align: left!important;
 }

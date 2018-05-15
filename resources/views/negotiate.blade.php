@@ -26,6 +26,8 @@
         font-size: 45px;
 ">2018</div>
 
+    {{--//如果页面有传入选择了哪个产品这个参数--}}
+    {{--@if($objtype)--}}
     @if($objtype)
         <!--洽谈盒子-->
         <div class="negotiateBox negotiateMain">
