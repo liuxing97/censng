@@ -8,6 +8,7 @@
     <script type="text/javascript" src="/js/base64js.min.js"></script>
     <script type="text/javascript" src="/js/pages/common.js"></script>
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
 
     @section('myJs')
     @show
