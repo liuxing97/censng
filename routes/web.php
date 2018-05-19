@@ -50,7 +50,12 @@ Route::get('/serverscope', function () {
     return view('serverscope');
 });
 Route::get('/advantage', function () {
-    return view('advantage');
+    if(is_mobile()){
+
+    }
+    return view('advantage',[
+        'isMobile' => is_mobile()
+    ]);
 });
 Route::get('/support', function () {
     return view('support');

@@ -9,16 +9,16 @@
     <link href="css/base.css" type="text/css" rel="stylesheet" />
     <link href="css/common.css" type="text/css" rel="stylesheet" />
     <link href="css/homepage.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
 
-
-
+    {{--bitbug_favicon.ico--}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/self/base.css" type="text/css" rel="stylesheet" />
     <script>
 
     </script>
 
-    <title>辰象建站-辰象科技</title>
+    <title>首页-辰象科技</title>
 </head>
 <body>
 <!--头部-->
@@ -69,7 +69,7 @@
             </a>
         </div>
         <!--标语-->
-        <div class="censngShow-words">辰象建站，您较好的选择</div>
+        <div class="censngShow-words">辰象科技，您较好的选择</div>
     </div>
 </div>
 
@@ -126,7 +126,8 @@
     <div class="serverSceneTitle">
         <div class="lang_en">Server Code Scene</div>
         <div class="t">业务核心场景</div>
-        <div class="a">辰象建站为各行业，客户的各方面，提供专业级“互联网+”方案，由内而外增加企业竞争力</div>
+        <div class="a">辰象科技为各行业，客户的各方面，提供专业级“互联网+”方案，由内而外增加企业竞争力</div>
+
     </div>
     {{--场景列表--}}
     <div class="serverSceneList">
