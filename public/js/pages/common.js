@@ -16,7 +16,8 @@ window.onscroll = function(){
 
 wx.miniProgram.getEnv(function(res) {
     // console.log(res.miniprogram) // true
-    $(".header").css({"position":"absolute","top":"-0","opacity":"0.98"});
+    $(".header").css({"position":"absolute!important","top":"0","opacity":"0.98"});
+    alert(1)
 });
 
 // left: -84px;
