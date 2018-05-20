@@ -14,5 +14,10 @@ window.onscroll = function(){
     }
 };
 
+wx.miniProgram.getEnv(function(res) {
+    // console.log(res.miniprogram) // true
+    $(".header").css({"position":"absolute","top":"-0","opacity":"0.98"});
+});
+
 // left: -84px;
 // top: 26px;
