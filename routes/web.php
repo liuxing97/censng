@@ -11,6 +11,9 @@
 |
 */
 
+
+
+
 function is_mobile()
 {
     $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
@@ -36,6 +39,7 @@ function is_mobile()
         return  false;
     }
 }
+
 
 Route::get('/', function () {
     return view('homepage');
@@ -95,3 +99,4 @@ Route::post('/act_negotiate', function () {
     $serverType = \Illuminate\Support\Facades\Input::get('serverType');
     $ret = $obj->save($phone,$name,$post,$codeNum,$sex,$serverType);
 });
+
