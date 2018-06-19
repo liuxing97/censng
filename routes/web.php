@@ -64,6 +64,9 @@ Route::get('/advantage', function () {
 Route::get('/support', function () {
     return view('support');
 });
+Route::get('/priceList', function () {
+    return view('priceList');
+});
 Route::get('/negotiate/success', function () {
     return view('leavMsgSuccess');
 });

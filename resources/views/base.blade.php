@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/base64js.min.js"></script>
     <script type="text/javascript" src="/js/pages/common.js"></script>
@@ -34,7 +34,8 @@
                 <li class="menuItem"><a href="/serverscope">业务范围</a></li>
                 <li class="menuItem"><a href="/advantage">我们优势</a></li>
                 <li class="menuItem"><a href="/negotiate">业务洽谈</a></li>
-                <li class="menuItem"><a href="/support">支持</a></li>
+                <li class="menuItem"><a href="/priceList">价格总览</a></li>
+                <li class="menuItem"><a href="/support">技术支持</a></li>
                 <li style="display: none;" class="menuItem"><a href="baidu.com">案例</a></li>
             </ul>
         </div>

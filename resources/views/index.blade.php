@@ -22,8 +22,9 @@
                     <li><a href="#show_site_anchor">案例展示</a></li>
                     <li><a href="#service_scope_anchor">服务范围</a></li>
                     <li><a href="#why_us_anchor">我们优势</a></li>
-                    <li><a href="#thanks_for_anchor">鸣谢支持</a></li>
-                    <li><a href="#contact_anchor">洽谈业务</a></li>
+                    <li><a href="/negotiate">业务洽谈</a></li>
+                    <li><a href="/priceList">价格总览</a></li>
+                    <li><a href="/support">技术支持</a></li>
                 </ul>
             </div>
         </div>

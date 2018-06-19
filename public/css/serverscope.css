@@ -127,6 +127,12 @@
 
 .choicedAbout{
     display: none;
+    /*width: 1000px;*/
+    /*margin: 0 auto;*/
+}
+.choicedAboutHeader{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .choicedTitle{
     color: #fff;
@@ -181,4 +187,34 @@
     .serverTypeMain{
         /*width: 1000px;*/
     }
+}
+
+
+.bluetooth:after{
+    font-family: FontAwesome;
+    content: "\f293"!important;
+}
+.speak:after{
+    font-family: FontAwesome;
+    content: "\f130"!important;
+}
+.phone_icon:after{
+    font-family: FontAwesome;
+    content: "\f10b"!important;
+}
+.yingjian:after{
+    font-family: FontAwesome;
+    content: "\f0e8"!important;
+}
+.duliyunxing:after{
+    font-family: FontAwesome;
+    content: "\f197"!important;
+}
+.azpg:after{
+    font-family: FontAwesome;
+    content: "\f1b3"!important;
+}
+.gengduo:after{
+    font-family: FontAwesome;
+    content: "\f018"!important;
 }

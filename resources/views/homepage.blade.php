@@ -43,7 +43,8 @@
                 <li class="menuItem"><a href="/advantage">我们优势</a></li>
                 {{--<li class="menuItem"><a href="/negotiate/6K+36YCJ5oup">业务洽谈</a></li>--}}
                 <li class="menuItem"><a href="/negotiate">业务洽谈</a></li>
-                <li class="menuItem"><a href="/support">支持</a></li>
+                <li class="menuItem"><a href="/priceList">价格总览</a></li>
+                <li class="menuItem"><a href="/support">技术支持</a></li>
                 <li style="display: none;" class="menuItem"><a href="baidu.com">案例</a></li>
             </ul>
         </div>
@@ -72,53 +73,6 @@
         <div class="censngShow-words">辰象科技，您较好的选择</div>
     </div>
 </div>
-
-{{--<div style="--}}
-{{--width: 100%;--}}
-{{--background: #2e2e2e;--}}
-{{--text-align: center;--}}
-{{--min-height: 600px;--}}
-{{--position: relative;--}}
-{{--">--}}
-    {{--内容区--}}
-    {{--<div style="--}}
-    {{--width: 80%;--}}
-    {{--margin: 0 auto;--}}
-        {{--">--}}
-        {{--圆--}}
-        {{--<div style="--}}
-    {{--background: #f0f0f0;--}}
-    {{--border-radius: 100%;--}}
-    {{--text-align: center;--}}
-    {{--width: 240px;--}}
-    {{--height: 240px;--}}
-    {{--position: absolute;--}}
-    {{--top: 100px;--}}
-    {{--box-shadow: inset 0 0 36px #1d1d1d;--}}
-{{--">--}}
-            {{--园内部--}}
-            {{--<div style="--}}
-            {{--display: table-cell;--}}
-            {{--vertical-align: middle;--}}
-            {{--height: 240px;--}}
-            {{--width: 240px;--}}
-            {{--color: #545454;--}}
-{{--">--}}
-                {{----}}
-                {{--<span style="font-size: 20px;font-weight:bold;display: inline-block;width: 200px;margin-bottom: 20px;line-height: 1.5em">PRODUCTS AND SERVICES</span>--}}
-                {{--<br>--}}
-                {{--<span style="padding-bottom: 12px;border-bottom:3px solid orange;font-size: 20px;margin-top: 20px;font-weight: bold">产品与服务</span>--}}
-                {{----}}
-            {{--</div>--}}
-
-        {{--</div>--}}
-    {{--</div>--}}
-{{--<img style="--}}
-{{--width: 1000px;--}}
-{{--" src="/img/1024.jpg" />--}}
-
-{{--</div>--}}
-
 
 {{--业务核心场景--}}
 <div class="serverScene">
@@ -151,7 +105,7 @@
         {{--线上线下--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061801.jpg" />
             </div>
             <div class="item-bg">
 
@@ -168,7 +122,7 @@
         {{--电商方案--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061803.jpg" />
             </div>
             <div class="item-bg">
 
@@ -185,7 +139,7 @@
         {{--营销工具--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061804.jpg" />
             </div>
             <div class="item-bg">
 
@@ -202,7 +156,7 @@
         {{--多店系统--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061802.jpg" />
             </div>
             <div class="item-bg">
 
@@ -219,7 +173,7 @@
         {{--智慧门店--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061805.bmp" />
             </div>
             <div class="item-bg">
 
@@ -236,7 +190,7 @@
         {{--内部管理--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061806.jpg" />
             </div>
             <div class="item-bg">
 
@@ -253,7 +207,7 @@
         {{--新时代--}}
         <div ontouchstart="$(this).chird('.item-bg').show()" class="item">
             <div class="item-box">
-                <img src="/img/1025.jpg" />
+                <img src="/img/061807.jpg" />
             </div>
             <div class="item-bg">
 
@@ -327,6 +281,7 @@
     .serverSceneList .item-box img{
         max-height: 100%;
         max-width: 100%;
+        height: 100%;
     }
     .serverSceneList .item-bg{
         position: absolute;
