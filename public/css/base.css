@@ -94,6 +94,9 @@
 .banner{
     min-width: 1000px;
 }
+.min-menu{
+    display: none!important;
+}
 .page{
     width: 100%;
 }
