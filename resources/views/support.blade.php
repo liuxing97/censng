@@ -8,18 +8,11 @@
 
 
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/def.css" type="text/css" rel="stylesheet" />
     <link href="css/base.css" type="text/css" rel="stylesheet" />
-    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/blackBase.css" type="text/css" rel="stylesheet" />
     <link href="css/homepage.css" type="text/css" rel="stylesheet" />
-    {{--<link href="css/support.css" type="text/css" rel="stylesheet" />--}}
-
-
-    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
-    <link href="css/self/base.css" type="text/css" rel="stylesheet" />
-    <script>
-
-    </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>辰象建站-辰象科技</title>
 </head>
 <body>
@@ -298,6 +291,20 @@
     }
     .menuItem:nth-child(6){
         border-bottom: 2px solid #fff;
+    }
+    @media screen and (max-width: 360px){
+        .beformarketTitle{
+            text-align: center;
+        }
+        .b-m-item{
+            text-align: center;
+        }
+        .b-m-i-msg{
+            width: 88%;
+        }
+        .aftermarket-m{
+            text-align: center;
+        }
     }
 </style>
 

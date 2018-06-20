@@ -1,8 +1,8 @@
 @extends('base')
 
 @section('myCss')
-    <link href="/plugins/SlidingLock/css/unlock.css" type="text/css" rel="stylesheet" />
-    {{--<link href="/css/negotiate.css" type="text/css" rel="stylesheet" />--}}
+    {{--<link href="/plugins/SlidingLock/css/unlock.css" type="text/css" rel="stylesheet" />--}}
+    <link href="/css/negotiate.css" type="text/css" rel="stylesheet" />
 @endsection
 @section('myJs')
     @if($objtype)
@@ -10,8 +10,8 @@
     @else
         <script>var pageStatus = 'noPara'</script>
     @endif
-    <script type="text/javascript" src="/js/pages/negotiate.js"></script>
-    <script type="text/javascript" src="/plugins/SlidingLock/js/unlock.js"></script>
+    {{--<script type="text/javascript" src="/js/pages/negotiate.js"></script>--}}
+    {{--<script type="text/javascript" src="/plugins/SlidingLock/js/unlock.js"></script>--}}
 @endsection
 
 @section("pageMain")
@@ -26,7 +26,7 @@
     <div class="negotiateMain">
         {{--客服--}}
         <div style="width:100%">
-            <div style="max-width: 1000px;margin: 0 auto;font-size: 28px;line-height: 4em;border-bottom: 1px solid #e5e5e5;color: #878787;">
+            <div class="kfdhMain" style="max-width: 1000px;margin: 0 auto;font-size: 28px;line-height: 4em;border-bottom: 1px solid #e5e5e5;color: #878787;">
                 <span>联系电话：029-8797 6807</span>
             </div>
         </div>
@@ -176,11 +176,11 @@
             </div>
             <div class="contactOnlineMain">
                 <div>
-                    <div style="text-align: center;font-size: 30px;margin-top: 42px;color: #fff;">
+                    <div style="text-align: center;font-size: 30px;margin-top: 42px;">
                         <div>Contact Us</div>
                         <div style="margin-top: 20px;font-size: 23px;letter-spacing: 6px;text-shadow: 0 0 10px #fff;">联系我们</div>
                     </div>
-                    <div style="text-align: center;margin-top: 42px;color: #fff;">
+                    <div style="text-align: center;margin-top: 42px;">
                         <div class="online-item">
                             <span class="t">联系人</span>
                             <span class="v"><input type="text"></span>
@@ -202,6 +202,7 @@
                             <span class="v"><textarea></textarea></span>
                         </div>
                     </div>
+                    <div class="onlinePostMobile">提交</div>
                     <style>
                         .online-item{
                             position: relative;
@@ -296,6 +297,7 @@
                     background: rgba(255,255,255,0.66);
                     min-height: 600px;
                     position: relative;
+                    color: #fff;
                 }
                 .onlinePost{
                     cursor: pointer;
@@ -304,6 +306,19 @@
                     background: #cc1212 !important;
                     color: #fff !important;
                     box-shadow: none !important;
+                }
+                .onlinePostMobile{
+                    line-height: 3em;
+                    background: #cc1212;
+                    text-align: center;
+                    /*margin: 0 auto;*/
+                    color: #fff;
+                    margin: 2em auto;
+                    /*margin-bottom: 2em;*/
+                    width: 238px;
+                    margin-bottom: 4em;
+                    border-radius: 5px;
+                    display: none;
                 }
             </style>
         </div>

@@ -127,8 +127,8 @@
         </div>
         <div class="priceList-app">
             <div class="priceList-wechatTitle">APP类</div>
-            <div style="text-align: center;color: #818181;">因APP类开发为专业为企业定制而做，故而基本为定制开发，需具体根据程序难易程度进行价格预算！</div>
-            <div style="text-align: center;margin-top: 3em;font-size: 22px;color: #cc1212;margin-bottom: 10em;">￥面议/永久</div>
+            <div style="text-align: center;color: #818181;line-height: 2.5em">因APP类开发为专业为企业定制而做，故而基本为定制开发，需具体根据程序难易程度进行价格预算！</div>
+            <div class="app-end" style="text-align: center;margin-top: 3em;font-size: 22px;color: #cc1212;margin-bottom: 10em;">￥面议/永久</div>
         </div>
         <style>
             .menuItem:nth-child(1){
@@ -190,7 +190,9 @@
                 font-size: 15px;
                 color: #969696;
             }
-            .p-w-m-i-about p{}
+            .p-w-m-i-about p{
+                line-height: 2.5em;
+            }
             .p-w-m-i-button{
                 background: #818181;
                 display: inline-block;
@@ -200,4 +202,39 @@
             }
         </style>
     </div>
+
+    <style>
+        @media screen and (max-width: 360px){
+            .p-w-m-item{
+                width: 90%;
+                margin: 0 auto;
+                /*margin-bottom: 0px;*/
+                margin-bottom: 4em;
+                display: block;
+            }
+            .priceList-webTitle{
+                background: #5c5c5c;
+                color: #fff;
+                line-height: 2.5em;
+            }
+            .priceList-wechatTitle{
+                background: #5c5c5c;
+                color: #fff;
+                line-height: 2.5em;
+            }
+            .p-we-m-item{
+                padding: 0 1em;
+                box-sizing: border-box;
+                width: 100%;
+                margin: 2em 0;
+                margin-bottom: 4em;
+            }
+            .p-we-m-item:hover{
+                box-shadow: none;
+            }
+            .app-end{
+                margin-bottom: 4em!important;
+            }
+        }
+    </style>
 @endsection

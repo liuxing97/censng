@@ -98,12 +98,12 @@ body{
 
 }
 .advMobile{
-    margin-top: 88px;
+    margin-top: 3em;
     /*border-top: 2px solid #d28f8f;*/
     /*background: #fff;*/
     margin-bottom: 77px;
     padding-top: 36px;
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
     text-align: center!important;
 }
 .advantageMsg{
@@ -189,4 +189,42 @@ body{
 }
 .advantageMsg p{
     line-height: 1.5em;
+}
+@media screen and (max-width: 360px){
+    .banner06{
+        overflow: hidden;
+        width: 100%;
+    }
+    .banner06 img{
+        width: 150%!important;
+        position: relative;
+        left: -25%;
+    }
+    .advantageBox{
+        margin: 0!important;
+    }
+    .advMobile{
+        margin: 0;
+        background: #fff!important;
+    }
+    .advMobile .advantageTitle{
+        text-align: left;
+        margin-left: 1em;
+    }
+    .thinkText{
+        background: #a4a4a4;
+        color: #fff;
+        padding: 2em 1em;
+        text-align: left;
+    }
+    .b_text{
+        /*font-size: 90%!important;*/
+        font-size: 18px!important;
+    }
+    .howThink{
+        margin-bottom: 4em!important;
+        border: none!important;
+        padding: 0!important;
+        margin-top: 4em!important;
+    }
 }

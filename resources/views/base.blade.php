@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone = no"/>
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/base64js.min.js"></script>
     <script type="text/javascript" src="/js/pages/common.js"></script>
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
-
     @section('myJs')
     @show
-    <link href="/css/base.css" type="text/css" rel="stylesheet" />
-    <link href="/css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/def.css" type="text/css" rel="stylesheet" />
+    <link href="css/base.css" type="text/css" rel="stylesheet" />
     @section('myCss')
     @show
     <link href="/css/page.css" type="text/css" rel="stylesheet" />
@@ -199,23 +199,6 @@
 <style>
 
     @media screen and (max-width: 360px){
-        .page{
-        background: #fff;
-        }
-        .negotiateMain{
-            display:none;
-        }
-        .negotiate_bg{
-            display: none;
-        }
-        .contactWay{
-            position: relative;
-            width: 100%;
-        }
-        .contactWay .about p{
-            color: #666!important;
-            text-shadow: none!important;
-        }
     }
 
 </style>

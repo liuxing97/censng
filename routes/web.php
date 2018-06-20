@@ -74,7 +74,9 @@ Route::get('/negotiate/success', function () {
 Route::get('/negotiate/{objtype?}', function ($objtype = null) {
 
     if(is_mobile()){
-        return view('negotiateMobile');
+        return view('negotiate',[
+            'objtype'=>$objtype
+        ]);
     }
     else{
         return view('negotiate',[

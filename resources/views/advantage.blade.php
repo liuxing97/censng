@@ -6,13 +6,19 @@
 
 @section('pageMain')
     {{--我们不仅仅是一家技术公司--}}
-    <div style="margin: 0 auto;"><img style="width: 100%" src="/img/06162.png" /></div>
+    <div class="banner06" style="margin: 0 auto;"><img style="width: 100%" src="/img/06162.png" /></div>
     {{--6个优势--}}
-    <div style="max-width: 1000px; margin: 0 auto">
+    <div style="background: #9e9e9e33;
+color: #545454;
+position: relative;
+top: -4px">
         @if($isMobile)
             <div class="advMobile">
                 <!--新公司ontouchstart-->
-                <div class="advantageBox f-advantageBox">
+                <div onclick="
+                if($(this).css('display') != 'inline-block'){
+                $('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show();
+                }" class="advantageBox f-advantageBox">
                     <div class="advantageBoxBox">
                         <div class="icon"></div>
                         <div class="advantageTitle">灵活搭配</div>
@@ -68,7 +74,10 @@
                         <p>我们可以为您提供方案，让您的‘互联网+’落地。</p>
                     </div>
                 </div>
-                <div class="advantageBox">
+                <div onclick="
+            if($(this).css('display') != 'inline-block'){
+            $('.advantageMsg').hide();$(this).chird('.advantageMsg').css({'position':'relative','top':'10pz','text-align':'left','text-align-last':'left'});$(this).chird('.advantageMsg').show();
+            }" class="advantageBox">
                     <div class="advantageBoxBox">
                         <div class="icon"></div>
                         <div class="advantageTitle">售后无忧</div>
@@ -179,7 +188,7 @@
         @endif
     </div>
     {{--什么是您所需要的，我们在思考--}}
-    <div style="
+    <div class="howThink" style="
 max-width: 1000px;
 margin: 0 auto;
     margin-top: 0px;
@@ -192,16 +201,16 @@ padding-bottom: 10em;
 color: #666;
 margin-top: -5em;
 padding-top: 7em;
-border-top: 2px solid #e6e6e6;
+/*border-top: 2px solid #e6e6e6;*/
 ">
         <div style="font-size: 36px">什么是您所需要的，我们在思考</div>
-        <div style="line-height: 2.5em;
+        <div class="thinkText" style="line-height: 2.5em;
 max-width: 695px;
 margin: 0 auto;
 margin-top: 4em">
             企业形象网站包装、搜索引擎优化、百度竞价、App开发、客户管理系统等等，所有的所有，都是为了在互联网时代的背景下不得以，不想在时代的背景下被淘汰而作出的选择！试试思维结合吧，我们从技术出发，站在您的角度。
         </div>
-        <div style="margin-top: 55px;
+        <div class="b_text" style="margin-top: 55px;
 font-size: 25px;
 letter-spacing: 9px;">业务在左，技术在右！</div>
     </div>
