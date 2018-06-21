@@ -156,32 +156,32 @@
         <div class="aftermarket-item">
             <div class="after-item-icon ymbz"></div>
             <div class="after-item-title">域名保证</div>
-            <div class="after-item-about">售后保障全年无休（上午8时30分至12时，下午2时至6时30分），为您的业务保驾护航。</div>
+            <div class="after-item-about">域名解析处理，帮助您设置好您的域名，保障您的域名可以正常访问。</div>
         </div>
         <div class="aftermarket-item">
             <div class="after-item-icon fwqbz"></div>
             <div class="after-item-title">服务器保障</div>
-            <div class="after-item-about">售后保障全年无休（上午8时30分至12时，下午2时至6时30分），为您的业务保驾护航。</div>
+            <div class="after-item-about">当您的服务器出现异常或压力过大时，我们会对您的服务器进行应急处理，竭力保障访问正常。</div>
         </div>
         <div class="aftermarket-item">
             <div class="after-item-icon gnxg"></div>
             <div class="after-item-title">功能修改</div>
-            <div class="after-item-about">售后保障全年无休（上午8时30分至12时，下午2时至6时30分），为您的业务保驾护航。</div>
+            <div class="after-item-about">一些功能上的问题，我们会根据您的要求，对其努力进行修正，保障您的业务状态正常。</div>
         </div>
         <div class="aftermarket-item">
             <div class="after-item-icon sypx"></div>
             <div class="after-item-title">使用培训</div>
-            <div class="after-item-about">售后保障全年无休（上午8时30分至12时，下午2时至6时30分），为您的业务保驾护航。</div>
+            <div class="after-item-about">对于您的工作人员，如有需求，我们会安排人员专业为您培训，确保您熟练使用程序。</div>
         </div>
         <div class="aftermarket-item">
             <div class="after-item-icon sjbf"></div>
             <div class="after-item-title">数据备份</div>
-            <div class="after-item-about">售后保障全年无休（上午8时30分至12时，下午2时至6时30分），为您的业务保驾护航。</div>
+            <div class="after-item-about">定期我们会对您的数据进行备份，保障您的数据安全，同时这些数据将是保密的，请您放心。</div>
         </div>
         <div class="aftermarket-item">
             <div class="after-item-icon zykf"></div>
             <div class="after-item-title">专业客服</div>
-            <div class="after-item-about">售后保障全年无休（上午8时30分至12时，下午2时至6时30分），为您的业务保驾护航。</div>
+            <div class="after-item-about">我们有专业的客服，站在您的角度为您提供售前、售后服务，尽可能使沟通顺畅。</div>
         </div>
     </div>
     {{--售后热线--}}
