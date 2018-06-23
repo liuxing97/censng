@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone = no"/>
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/base64js.min.js"></script>
-    <script type="text/javascript" src="/js/pages/common.js"></script>
+    {{--<script type="text/javascript" src="/js/pages/common.js"></script>--}}
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
     @section('myJs')
@@ -16,7 +16,7 @@
     <link href="css/base.css" type="text/css" rel="stylesheet" />
     @section('myCss')
     @show
-    <link href="/css/page.css" type="text/css" rel="stylesheet" />
+    {{--<link href="/css/page.css" type="text/css" rel="stylesheet" />--}}
     <title>辰象科技</title>
 </head>
 <body>
@@ -35,6 +35,7 @@
                 <li class="menuItem"><a href="/advantage">我们优势</a></li>
                 <li class="menuItem"><a href="/negotiate">业务洽谈</a></li>
                 <li class="menuItem"><a href="/priceList">价格总览</a></li>
+                <li class="menuItem"><a href="/template">选购模板</a></li>
                 <li class="menuItem"><a href="/support">技术支持</a></li>
                 <li style="display: none;" class="menuItem"><a href="baidu.com">案例</a></li>
             </ul>

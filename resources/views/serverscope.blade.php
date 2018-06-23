@@ -108,8 +108,8 @@
 
             ">我们能给你带来什么</div>
         <div style="text-align: center">
-            <div class="dlsm" style="margin: 0 auto;display: inline-block">
-                <img style="width: auto;max-width: 100%;height: auto" src="img/06121.png" />
+            <div class="dlsm" style="margin: 0 auto;display: inline-block;box-shadow: 0 0 10px #727272;">
+                <img style="width: auto;max-width: 100%;height: auto" src="img/062205.jpg" />
             </div>
             <div style="margin-top: 36px;font-size: 18px;letter-spacing: 2px;color: #787878">
                 <span style="font-size: 30px;

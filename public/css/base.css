@@ -91,9 +91,6 @@
 .header,.footer{
     min-width: 1000px;
 }
-.banner{
-    min-width: 1000px;
-}
 .min-menu{
     display: none!important;
 }
@@ -113,7 +110,7 @@
     }
     .header::-webkit-scrollbar {display: none;}
     .menu{
-        width: 760px!important;
+        width: 820px!important;
         overflow-x: scroll;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;

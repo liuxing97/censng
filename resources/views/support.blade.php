@@ -40,6 +40,7 @@
                 {{--<li class="menuItem"><a href="/negotiate/6K+36YCJ5oup">业务洽谈</a></li>--}}
                 <li class="menuItem"><a href="/negotiate">业务洽谈</a></li>
                 <li class="menuItem"><a href="/priceList">价格总览</a></li>
+                <li class="menuItem"><a href="/template">选购模板</a></li>
                 <li class="menuItem"><a href="/support">技术支持</a></li>
                 <li style="display: none;" class="menuItem"><a href="baidu.com">案例</a></li>
             </ul>
@@ -289,7 +290,7 @@
     .menuItem:nth-child(1){
         border-bottom: none;
     }
-    .menuItem:nth-child(6){
+    .menuItem:nth-child(7){
         border-bottom: 2px solid #fff;
     }
     @media screen and (max-width: 360px){
