@@ -88,6 +88,9 @@ Route::get('/negotiate/{objtype?}', function ($objtype = null) {
 Route::get('/negotiateMobile', function () {
     return view('negotiateMobile');
 });
+Route::get('/template', function () {
+    return view('templates');
+});
 
 Route::get('/msg/leave_msg/{phoneNumber}', function ($phoneNumber) {
     $obj = new \App\Http\Controllers\Message;
