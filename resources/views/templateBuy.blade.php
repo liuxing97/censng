@@ -582,12 +582,12 @@ margin-top: 3em;
                 <div class="pt-list">
                     <div class="i">
                         <input onclick="contact.payType='wechat'" name="paytype" class="c" type="radio" autocomplete="off"  />
-                        <div class="icon"><img style="position: relative; left: -100%" src="/img/payType.jpg" /></div>
+                        <div class="icon"><img style="position: relative; left: -100%" src="/img/paytype.jpg" /></div>
                         <span>微信支付</span>
                     </div>
                     <div class="i">
                         <input onclick="contact.payType='alipay'" name="paytype" class="c" type="radio" autocomplete="off"  />
-                        <div class="icon"><img src="/img/payType.jpg" /></div>
+                        <div class="icon"><img src="/img/paytype.jpg" /></div>
                         <span>支付宝支付</span>
                     </div>
                 </div>
