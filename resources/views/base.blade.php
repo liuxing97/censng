@@ -4,18 +4,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="format-detection" content="telephone = no"/>
     <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="/js/base64js.min.js"></script>
-    <script type="text/javascript" src="/js/pages/common.js"></script>
+    {{--<script type="text/javascript" src="/js/pages/common.js"></script>--}}
     <link type="text/css" href="/css/font-awesome.min.css" rel="stylesheet" />
-
+    <link rel="shortcut icon" href="/img/bitbug_favicon.ico" type="image/x-icon">
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
     @section('myJs')
     @show
+    <link href="/css/def.css" type="text/css" rel="stylesheet" />
     <link href="/css/base.css" type="text/css" rel="stylesheet" />
-    <link href="/css/common.css" type="text/css" rel="stylesheet" />
     @section('myCss')
     @show
-    <link href="/css/page.css" type="text/css" rel="stylesheet" />
+    {{--<link href="/css/page.css" type="text/css" rel="stylesheet" />--}}
     <title>辰象科技</title>
 </head>
 <body>
@@ -33,7 +42,9 @@
                 <li class="menuItem"><a href="/serverscope">业务范围</a></li>
                 <li class="menuItem"><a href="/advantage">我们优势</a></li>
                 <li class="menuItem"><a href="/negotiate">业务洽谈</a></li>
-                <li class="menuItem"><a href="/support">支持</a></li>
+                <li class="menuItem"><a href="/priceList">价格总览</a></li>
+                <li class="menuItem"><a href="/template">选购模板</a></li>
+                <li class="menuItem"><a href="/support">技术支持</a></li>
                 <li style="display: none;" class="menuItem"><a href="baidu.com">案例</a></li>
             </ul>
         </div>
@@ -197,23 +208,6 @@
 <style>
 
     @media screen and (max-width: 360px){
-        .page{
-        background: #fff;
-        }
-        .negotiateMain{
-            display:none;
-        }
-        .negotiate_bg{
-            display: none;
-        }
-        .contactWay{
-            position: relative;
-            width: 100%;
-        }
-        .contactWay .about p{
-            color: #666!important;
-            text-shadow: none!important;
-        }
     }
 
 </style>

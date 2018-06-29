@@ -52,4 +52,43 @@ class Message extends Controller
             echo ($e->getMessage());
         }
     }
+//    模板网站购买
+    function webTemplateBuy($phoneNumber){
+        try {
+            DB::beginTransaction();
+            //查询是否已存在
+            $verification = new Verification();
+            $verRet = $verification -> where('phone',$phoneNumber)->where('deadline_at','>',time())->where('used','0')->first();
+            if($verRet){
+                //已经发送过二维码了,继续发送就行了
+                $number = $verRet -> code;
+            }else{
+                //生成随机验证码，并保存至数据库
+                $number = rand(100000,999999);
+                $verification = new Verification();
+                $verification -> phone = $phoneNumber;
+                $verification ->type = 'web_template_msg';
+                $verification ->code = $number;
+                $verification ->deadline_at = time()+60*15;
+                $ret = $verification -> save();
+                if(!$ret){
+                    throw new \Exception("sql is error");
+                }
+            }
+            //发送短信
+                $sender = new SmsSingleSender($this->appid, $this->appkey);
+                $result = $sender->send(0, "86", $phoneNumber,
+                    "验证码：".$number."，辰象客户，您正在使用短信验证服务，进行模板网站购买操作[如未操作，请忽略该条短信，非常抱歉给您带来不便]",
+                    "",
+                    "");
+                $rsp = json_decode($result);
+    //            echo $rsp;
+            DB::commit();
+            //返回结果
+    //            echo $result;
+        }catch(\Exception $e) {
+            DB::rollBack();
+            echo ($e->getMessage());
+        }
+    }
 }

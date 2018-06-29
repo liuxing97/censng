@@ -1,60 +1,165 @@
-html,body,address,blockquote,body,dd,div,dl,dt,fieldset,form,frame,frameset,h1,h2,h3,h4,h5,h6,noframes,ol,p,ul,center,dir,hr,menu,pre{display:block;margin: 0;padding: 0;line-height: 1em}
-html{position: relative;font-family: "微软雅黑";}
-a{text-decoration: none;}
-a:focus{outline: none;}
-li{display:list-item}
-head{display:none}
-table{display:table}
-tr{display:table-row}
-thead{display:table-header-group}
-tbody{display:table-row-group}
-tfoot{display:table-footer-group}
-col{display:table-column}
-colgroup{display:table-column-group}
-td,th{display:table-cell;}
-caption{display:table-caption}
-th{font-weight:bolder; text-align:center}
-caption{text-align:center}
-h1{font-size:2em; margin:.67em 0}
-h2{font-size:1.5em; margin:.75em 0}
-h3{font-size:1.17em; margin:.83em 0}
-h4{margin:1.12em 0}
-p{margin: 1.12em}
-h5{font-size:.83em; margin:1.5em 0}
-h6{font-size:.75em; margin:1.67em 0}
-h1,h2,h3,h4,h5,h6,b,strong{font-weight:bolder}
-blockquote{margin-left:40px; margin-right:40px}
-i,cite,em,var,address{font-style:italic}
-pre,tt,code,kbd,samp{font-family:monospace}
-pre{white-space:pre}
-button,textarea,input,object,select{display:inline-block;}
-big{font-size:1.17em}
-small,sub,sup{font-size:.83em}
-sub{vertical-align:sub}
-sup{vertical-align:super}
-table{border-spacing:2px;}
-thead,tbody,tfoot{vertical-align:middle}
-td,th{vertical-align:inherit}
-s,strike,del{text-decoration:line-through}
-hr{border:1px inset}
-ol,ul,dir,menu,dd{margin-left:40px}
-ol{list-style-type:decimal}
-ol ul,ul ol,ul ul,ol ol{margin-top:0; margin-bottom:0}
-u,ins{text-decoration:underline}
-br:before{content:”\A”}
-:before,:after{white-space:pre-line}
-
-center{text-align:center}
-abbr,acronym{font-variant:small-caps; letter-spacing:0.1em}
-:link,:visited{text-decoration:underline}
-:focus{outline:thin dotted invert}
-
-@media print{
-    h1{page-break-before:always}
-    h1,h2,h3,
-    h4,h5,h6{page-break-after:avoid}
-    ul,ol,dl{page-break-before:avoid}
+.header-main{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
 }
-body{
-    background: #fbfbfb;
+.menu{
+    position: relative;
+    top:40px;
+}
+.menuUl{
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    /*font-size: 14px;*/
+}
+.menuItem{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 10px 10px 10px;
+    cursor: pointer;
+}
+.menuItem:hover{
+    border-bottom: 2px solid #cc1212;
+}
+.menuItem a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-main-icon{
+    text-align: center;
+}
+.header-main-icon img:hover{
+    opacity: 1;
+}
+.header-main-icon ul{
+    margin-left:0;
+}
+.header-main-icon li{
+    display: block;
+    position: relative;
+    top:50px;
+}
+.header-main-icon li span{
+    display: none;
+}
+.header-main-icon li img{
+    opacity: 0.66;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.footer{
+    min-height: 100px;
+    background: #f2f2f2;
+    color: #5a5a5a;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    box-shadow: 0 0 10px #ccc;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    padding-bottom: 28px;
+}
+.footer p{
+    margin: 0;
+    line-height: 1.5em;
+    margin-top: 16px;
+}
+
+.header-logo{
+    position: absolute;
+    left: -84px;
+    top: 26px;
+}
+.header-logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.header{
+    height: 138px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px #8a8a8a;
+    position: relative;
+    z-index: 9999;
+}
+.menuItem a{
+    text-decoration: none;
+    color: #666;
+}
+.header,.footer{
+    min-width: 1000px;
+}
+.min-menu{
+    display: none!important;
+}
+.page{
+    width: 100%;
+    /*display: none!important;*/
+}
+.pageMain{
+    min-height: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 360px){
+    .header{
+        height: inherit!important;
+        min-height: 100px!important;
+    }
+    .header::-webkit-scrollbar {display: none;}
+    .menu{
+        width: 820px!important;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+    }
+    .min-menu{
+    }
+    .footer .br{
+        display: block;
+        margin-bottom: 12px;
+    }
+    .footer{
+        padding: 36px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .page{
+        /*background: #fff;*/
+    }
+    .negotiateMain{
+        /*display:none;*/
+    }
+    .negotiate_bg{
+        display: none;
+    }
+    .contactWay{
+        position: relative;
+        width: 100%;
+    }
+    .contactWay .about p{
+        color: #666!important;
+        text-shadow: none!important;
+    }
+}
+.actBg{
+    position: fixed;
+    background: rgba(0,0,0,0.36);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+}
+.actionScreen{
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #fff;
 }

@@ -30,8 +30,6 @@ function Page() {
         $(".choicedAbout").hide();
         //关闭所有卡片样式
         $(".serverTypeClass").css({"box-shadow":"none"});
-
-
         if(show == 'web'){
             //显示web开发介绍
             that.web.show(300);
@@ -63,7 +61,6 @@ function Page() {
         else{
         }
     }
-
     /**
      * 网站开发业务类型切换
      */

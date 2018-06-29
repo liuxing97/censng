@@ -11,9 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+function is_mobile()
+{
+    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+    $is_pc = (strpos($agent, 'windows nt')) ? true : false;
+    $is_mac = (strpos($agent, 'mac os')) ? true : false;
+    $is_iphone = (strpos($agent, 'iphone')) ? true : false;
+    $is_android = (strpos($agent, 'android')) ? true : false;
+    $is_ipad = (strpos($agent, 'ipad')) ? true : false;
+
+    if($is_iphone){
+        return  true;
+    }
+    if($is_android){
+        return  true;
+    }
+    if($is_ipad){
+        return  true;
+    }
+    if($is_pc){
+        return  false;
+    }
+    if($is_mac){
+        return  false;
+    }
+}
+
 
 Route::get('/', function () {
     return view('homepage');
@@ -28,10 +52,18 @@ Route::get('/serverscope', function () {
     return view('serverscope');
 });
 Route::get('/advantage', function () {
-    return view('advantage');
+    if(is_mobile()){
+
+    }
+    return view('advantage',[
+        'isMobile' => is_mobile()
+    ]);
 });
 Route::get('/support', function () {
     return view('support');
+});
+Route::get('/priceList', function () {
+    return view('priceList');
 });
 Route::get('/negotiate/success', function () {
     return view('leavMsgSuccess');
@@ -39,16 +71,36 @@ Route::get('/negotiate/success', function () {
 
 Route::get('/negotiate/{objtype?}', function ($objtype = null) {
 
-    return view('negotiate',[
-        'objtype'=>$objtype
-    ]);
+    if(is_mobile()){
+        return view('negotiate',[
+            'objtype'=>$objtype
+        ]);
+    }
+    else{
+        return view('negotiate',[
+            'objtype'=>$objtype
+        ]);
+    }
+
+});
+Route::get('/negotiateMobile', function () {
+    return view('negotiateMobile');
+});
+Route::get('/template', function () {
+    return view('templates');
+});
+Route::get('/template/buy/{number}', function ($number = null) {
+    return view('templateBuy',['number'=>$number]);
 });
 
 Route::get('/msg/leave_msg/{phoneNumber}', function ($phoneNumber) {
     $obj = new \App\Http\Controllers\Message;
     $ret = $obj->leaveMsg($phoneNumber);
 });
-
+Route::get('/msg/buy/web_template/{phoneNumber}', function ($phoneNumber) {
+    $obj = new \App\Http\Controllers\Message;
+    $ret = $obj->webTemplateBuy($phoneNumber);
+});
 Route::post('/act_negotiate', function () {
     $obj = new \App\Http\Controllers\Leavmsg();
     $phone = \Illuminate\Support\Facades\Input::get('phone');
@@ -58,4 +110,21 @@ Route::post('/act_negotiate', function () {
     $sex = \Illuminate\Support\Facades\Input::get('sex');
     $serverType = \Illuminate\Support\Facades\Input::get('serverType');
     $ret = $obj->save($phone,$name,$post,$codeNum,$sex,$serverType);
+});
+Route::post('/buy/order/webtemplate',function (){
+    $temNum = \Illuminate\Support\Facades\Input::get('temNum');
+    $name = \Illuminate\Support\Facades\Input::get('name');
+    $phone = \Illuminate\Support\Facades\Input::get('phone');
+    $buyType = \Illuminate\Support\Facades\Input::get('buyType');
+    $enterpriseName = \Illuminate\Support\Facades\Input::get('enterpriseName');
+    $enterpriseAdd = \Illuminate\Support\Facades\Input::get('enterpriseAdd');
+    $validate = \Illuminate\Support\Facades\Input::get('validate');
+    $payType = \Illuminate\Support\Facades\Input::get('payType');
+    $domain = \Illuminate\Support\Facades\Input::get('domain');
+    $server = \Illuminate\Support\Facades\Input::get('server');
+    $addPrice = \Illuminate\Support\Facades\Input::get('addPrice');
+    //进行验证码验证并提交订单
+    $orderObj = new \App\Http\Controllers\WebTemplateOrder();
+    $ret = $orderObj -> saveOrderInfor($temNum,$name,$phone,$buyType,$enterpriseName,$enterpriseAdd,$validate,$payType,$domain,$server,$addPrice);
+    return json_encode($ret);
 });

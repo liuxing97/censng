@@ -1,0 +1,39 @@
+.header{
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    /*padding-bottom: 76px;*/
+}
+.footer{
+    min-width: 0;
+}
+.min-menu{
+    display: none;
+    /*color: #fff;*/
+    text-align: center;
+    line-height: 92px;
+    color: #f6f6f6;
+    font-size: 18px;
+    text-indent: 6px;
+    letter-spacing: 6px;
+}
+.footer .br{
+    display: none;
+}
+.min-menu .top{
+    line-height: 92px;
+}
+.min-menu ul{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .header{
+        padding-bottom: 46px;
+    }
+    .menuItem{
+        margin-bottom: 1.5em;
+    }
+    .header-main-icon{
+        display: none;
+    }
+}
