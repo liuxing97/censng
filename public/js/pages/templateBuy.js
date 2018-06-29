@@ -276,6 +276,8 @@ var pay = new function () {
                 addPrice:addPrice
             },
             function (data, status) {
+                $('html').append(data);
+                document.forms['alipaysubmit'].submit();
                 console.log(data);
             }
         );

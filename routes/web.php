@@ -126,5 +126,11 @@ Route::post('/buy/order/webtemplate',function (){
     //进行验证码验证并提交订单
     $orderObj = new \App\Http\Controllers\WebTemplateOrder();
     $ret = $orderObj -> saveOrderInfor($temNum,$name,$phone,$buyType,$enterpriseName,$enterpriseAdd,$validate,$payType,$domain,$server,$addPrice);
-    return json_encode($ret);
+//    return json_encode($ret);
+});
+Route::get('/order/webtemplate/return',function (){
+    var_dump($_GET);
+});
+Route::post('/order/webtemplate/return/post',function (){
+    var_dump($_POST);
 });
