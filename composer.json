@@ -19,7 +19,7 @@
     "autoload": {
         "classmap": [
             "database",
-            "app/libs/alipaySDK-PHP3.1.0"
+            "app/libs/alipaySDK"
         ],
         "psr-4": {
             "App\\": "app/"
