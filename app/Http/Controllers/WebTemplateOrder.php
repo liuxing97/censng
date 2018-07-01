@@ -26,8 +26,8 @@ class WebTemplateOrder extends Controller
         $aop->format='json';
         $aop->alipayrsaPublicKey = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzByOGz0HQuVfVxEAB/riAg8We2WZJkEAfC03vofSK7qG6XT37LdR6oAJFbV9qnN3YjBZNx6iwQaOBL6fbpq7kH6hQHZchax3v2Yb2xmW406J+MYrx/yRil7X4oSjY215RxR9kCrJcQMiYGT6V0J4N0FOM5We0Dzxu18R8LakyL4Hww2Z5B9hzk5Or74cxPPJl0rN1qTyfGtek4/J0RLkPSE0YZ97DOtqtQ8GvSxzw7442CzdD4aSEYBYGsOhvMpXk2s92IW+NtNPjWu8wiDavH17MAFon08DDidE+Lsvi42+KfCTzBCga2yu0v5bcoSQ0jBHQ8SnZ25wYXk6zJtBQIDAQAB';
         $request = new AlipayTradePagePayRequest();
-        $request->setReturnUrl('https://www.censng.com/order/webtemplate/return');
-        $request->setNotifyUrl('https://www.censng.com/order/webtemplate/return/post');
+        $request->setReturnUrl('');
+        $request->setNotifyUrl('');
         $body = "模板网站编号：{$muban}";
         if($domain){
             $body = $body.";域名注册服务";
