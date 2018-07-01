@@ -12,6 +12,10 @@ use App\TemplateOrder;
 use AopClient;
 use AlipayTradePagePayRequest;
 //require_once("\..\..\libs\alipaySDK\AopSdk.php");
+//http://openapi.alipay.com/gateway.do?charset=utf-8&charset=utf-8&alipay_sdk=alipay-sdk-php-20161101&biz_content={ "product_code":"FAST_INSTANT_TRADE_PAY", "out_trade_no":"477005909", "subject":"辰象科技模板网站开发购买", "total_amount":"0.01", "body":"模板网站编号：083343;域名注册服务;jingji。", "goods_type":"0", "timeout_express":"1h" }&method=alipay.trade.page.pay&format=json&sign=p7bfhMmzHnLRiM9zs2UQXzsbBanTmNpGJ/dcnhsE8fr06Uj2IWrEi3Hr0ZTcYoIFkz/YHpz+RRODy3xum70CNboZyxN7jWkDWQvECfEtca1YGpkQhaelwSrtk18eHuT76Xrr2oJQZjV8RqFELoj7RQrP52rbuS+w2VKUmkEneuECWnq2ZsTwlGtWC0xhg2GDvlVaPu8FZPAAmDy/LWuKLgSQGw+wgZnuuMIyr1PV5uefBinPZZORP4gFyfCukpmVKqNO8GG3ij8ThqLt7P3g3asAYddJru2OeonAaklebJM47K9coaUNmnDj/k1Ec8vdiO1u/T4qa36emX17pKnVGw==&app_id=2018041502561560&version=1.0&sign_type=RSA2&timestamp=2018-07-01 12:18:52
+//TeH47LWm+uvZTzq2HXn91VBgZpsgYXU4w1pnqvdlGp9JuNTRnllZWEqOoCEqjhrnocvQ4jFaTZmIr7Xqckou0NJkV3GTTXLzhuOJSmLPlJ+UIsujDMG+8v7q0sRpOJKuGOPrBkvZQ8E6ZF9f6PlLRdsVIIY86d/19mYXiwxuClGPJviEbd50hxEI6ORF/WZ5qt7p5RuEVJiMH5v6m/iqbJWX1IbZ2ibv6J1cHnJO7wMM/be0cjspuG+XJ0nvh4307bDs/8GH3spZWG6nkssyd2Jc2Sw/v9qv7unA02FKJ5OGXcBquu/R7N4OpkBzCIIxOpeV4EyhZuuA6vL6xlpHSA==
+
+
 require_once("/web/site.censng.com/app/libs/alipaySDK/AopSdk.php");
 class WebTemplateOrder extends Controller
 {

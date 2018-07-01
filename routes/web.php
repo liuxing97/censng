@@ -132,5 +132,9 @@ Route::get('/order/webtemplate/return',function (){
     var_dump($_GET);
 });
 Route::post('/order/webtemplate/return/post',function (){
-    var_dump($_POST);
+    $return = json_encode($_POST);
+    $obj = new \App\Returns();
+    $obj -> value = $return;
+    $ret = $obj -> save();
+    return json_encode($ret);
 });
