@@ -11,7 +11,7 @@ use App\Verification;
 use App\TemplateOrder;
 use AopClient;
 use AlipayTradePagePayRequest;
-require_once("C:\censng\censng.com\app\libs\alipaySDK\AopSdk.php");
+require_once("/../../libs/alipaySDK\AopSdk.php");
 class WebTemplateOrder extends Controller
 {
     function payByAliPay($order,$muban,$price,$domain = null,$server = null){
@@ -136,5 +136,9 @@ function saveOrderInfor($temNum,$name,$phone,$buyType,$enterpriseName,$enterpris
             'time' => time()
         ]);
     }
+}
+
+static function test(){
+    echo dirname(__FILE__.'/../../libs\alipaySDK\AopSdk.php');
 }
 }
