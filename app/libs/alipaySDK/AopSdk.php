@@ -16,7 +16,7 @@
 if (!defined("AOP_SDK_WORK_DIR"))
 {
 //	define("AOP_SDK_WORK_DIR", "C:\censng\censng.com\app\libs\alipaySDK\\tmp");
-    define("AOP_SDK_WORK_DIR", dirname(__FILE__)."/../tmp/");
+    define("AOP_SDK_WORK_DIR", dirname(__FILE__)."/tmp/");
 }
 /**
  * 是否处于开发模式
