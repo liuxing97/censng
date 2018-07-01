@@ -11,7 +11,7 @@ use App\Verification;
 use App\TemplateOrder;
 use AopClient;
 use AlipayTradePagePayRequest;
-require_once("/../../libs/alipaySDK\AopSdk.php");
+require_once("\..\..\libs\alipaySDK\AopSdk.php");
 class WebTemplateOrder extends Controller
 {
     function payByAliPay($order,$muban,$price,$domain = null,$server = null){
