@@ -137,8 +137,4 @@ function saveOrderInfor($temNum,$name,$phone,$buyType,$enterpriseName,$enterpris
         ]);
     }
 }
-
-static function test(){
-    echo dirname(__FILE__.'/../../libs\alipaySDK\AopSdk.php');
-}
 }
