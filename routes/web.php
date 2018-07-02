@@ -12,6 +12,9 @@
 */
 
 
+use Illuminate\Support\Facades\Route;
+
+
 function is_mobile()
 {
     $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
@@ -37,8 +40,6 @@ function is_mobile()
         return  false;
     }
 }
-
-
 Route::get('/', function () {
     return view('homepage');
 });
@@ -68,9 +69,7 @@ Route::get('/priceList', function () {
 Route::get('/negotiate/success', function () {
     return view('leavMsgSuccess');
 });
-
 Route::get('/negotiate/{objtype?}', function ($objtype = null) {
-
     if(is_mobile()){
         return view('negotiate',[
             'objtype'=>$objtype
@@ -81,7 +80,6 @@ Route::get('/negotiate/{objtype?}', function ($objtype = null) {
             'objtype'=>$objtype
         ]);
     }
-
 });
 Route::get('/negotiateMobile', function () {
     return view('negotiateMobile');
@@ -92,7 +90,6 @@ Route::get('/template', function () {
 Route::get('/template/buy/{number}', function ($number = null) {
     return view('templateBuy',['number'=>$number]);
 });
-
 Route::get('/msg/leave_msg/{phoneNumber}', function ($phoneNumber) {
     $obj = new \App\Http\Controllers\Message;
     $ret = $obj->leaveMsg($phoneNumber);
@@ -129,12 +126,26 @@ Route::post('/buy/order/webtemplate',function (){
 //    return json_encode($ret);
 });
 Route::get('/order/webtemplate/return',function (){
-    var_dump($_GET);
+    $obj = new \App\Http\Controllers\WebTemplateOrder();
+    $ret = $obj -> checkReturn();
+    if($ret){
+        echo "支付成功";
+        //支付成功页面
+//        return view();
+    }else{
+        echo "遇到错误";
+        //错误页面，存在错误
+//        return view();
+    }
 });
 Route::post('/order/webtemplate/return/post',function (){
-    $return = json_encode($_POST);
-    $obj = new \App\Returns();
-    $obj -> value = $return;
-    $ret = $obj -> save();
-    return json_encode($ret);
+    $obj = new \App\Http\Controllers\WebTemplateOrder();
+    $ret = $obj -> checkNotify();
+    if($ret){
+        //支付成功，不返回任何页面
+        return true;
+    }else{
+        //存在错误，调用逻辑处理并记录日志
+        return false;
+    }
 });

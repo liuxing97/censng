@@ -12,6 +12,7 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-//        '/buy/order/webtemplate'
+        '/order/webtemplate/return',
+        '/order/webtemplate/return/post'
     ];
 }
