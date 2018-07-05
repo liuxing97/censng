@@ -1,0 +1,160 @@
+[33mcommit 38d47fd47b2ca9d0d0a80df0c3488fc351ca5a51[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: liuxing <gex1217@censng.com>
+Date:   Wed May 16 02:51:20 2018 +0800
+
+    add page of negotiateMobile
+
+[33mcommit b765442b1b48042c28176caab7dec6ec247c427a[m
+Author: liuxing <gex1217@censng.com>
+Date:   Wed May 16 02:21:21 2018 +0800
+
+    msg post
+
+[33mcommit 1bd612a1aefb0fb13c53bc3cb47097b527654766[m
+Author: liuxing <gex1217@censng.com>
+Date:   Wed May 16 01:52:08 2018 +0800
+
+    change some bug
+
+[33mcommit 6bc8c67f8639efdd63a701b06c020821f3348790[m
+Author: liuxing <2397514801@qq.com>
+Date:   Tue May 15 18:53:00 2018 +0800
+
+    change homepage banner css
+
+[33mcommit f00b0e2a8137c2ca0eca2ce879fa6711925907c8[m
+Merge: 6ec0221 5b62053
+Author: liuxing <2397514801@qq.com>
+Date:   Mon May 14 00:48:08 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+
+[33mcommit 5b6205357fc0adc501b3eb1b6bdf88284291822a[m
+Author: liuxing <gex1217@censng.com>
+Date:   Mon May 14 00:47:20 2018 +0800
+
+    add self module
+
+[33mcommit 6ec0221a54331fb8df1a70d26a158b21acec2367[m
+Merge: 27a9e17 6be00e3
+Author: liuxing <2397514801@qq.com>
+Date:   Sun May 13 20:43:04 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+
+[33mcommit 6be00e3056f6e26a24b2e73e221e9581bf1551b2[m
+Author: liuxing <gex1217@censng.com>
+Date:   Sun May 13 20:42:00 2018 +0800
+
+    change homepage.blade.php mail bgcolor
+
+[33mcommit 27a9e17cc293aa1b9a603148530803282a8a4350[m
+Merge: fc0fe5d af09b43
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 15:38:08 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+
+[33mcommit fc0fe5d3433f8dcf83640639febebc97ed09cd8c[m
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 15:38:03 2018 +0800
+
+    pull change
+
+[33mcommit af09b437ce04847dd4a54d4d7a6a2771aff88c13[m
+Author: liuxing <gex1217@censng.com>
+Date:   Sat May 12 15:34:33 2018 +0800
+
+    write a mail
+
+[33mcommit d7119215a9b07608912e0d4663c285add13aeb3b[m
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 15:19:05 2018 +0800
+
+    change
+
+[33mcommit 673165aae21cfad11dfb6e470e4518eb60f6498f[m
+Merge: 7348db5 3633695
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 15:16:58 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+    
+    Conflicts:
+            resources/views/homepage.blade.php
+
+[33mcommit 36336953e7c5fe48d1897cfc93140c4e7ef442d2[m
+Author: liuxing <gex1217@censng.com>
+Date:   Sat May 12 15:11:27 2018 +0800
+
+    write a mail
+
+[33mcommit 7348db50a641712c9d0e63f78d42abdf444dffb8[m
+Merge: bf7bbfe a01a0cb
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 13:43:34 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+
+[33mcommit a01a0cbb76ed66f3c03948dc8de00f2314d1a632[m
+Author: liuxing <gex1217@censng.com>
+Date:   Sat May 12 13:43:03 2018 +0800
+
+    change index block order
+
+[33mcommit bf7bbfe3be0aa4d0b73093d09ec0bf2637a80339[m
+Merge: ff66af2 6da51bb
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 13:37:58 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+
+[33mcommit 6da51bbfd540c44084a40837c5ce6034047a95ca[m
+Author: liuxing <gex1217@censng.com>
+Date:   Sat May 12 13:37:40 2018 +0800
+
+    change img zonghekaifa.jpg size
+
+[33mcommit ff66af262347a5994ceffa6d285afb354097cec8[m
+Merge: d4d1355 61aa458
+Author: liuxing <2397514801@qq.com>
+Date:   Sat May 12 13:34:47 2018 +0800
+
+    Merge branch 'master' of https://github.com/liuxing97/site.censng.com
+
+[33mcommit 61aa458ce79a0df69fe4f2e4776cfe763013922c[m
+Author: liuxing <gex1217@censng.com>
+Date:   Sat May 12 13:33:46 2018 +0800
+
+    add index page content
+
+[33mcommit d4d1355da3cc4236b2942604f66544781905e42d[m
+Merge: ef38c2b a996f82
+Author: liuxing <2397514801@qq.com>
+Date:   Fri May 11 01:29:23 2018 +0800
+
+    test
+
+[33mcommit ef38c2bcb9a9051e14a203edeb63129970ec055d[m
+Author: liuxing <2397514801@qq.com>
+Date:   Fri May 11 01:26:29 2018 +0800
+
+    3 commit
+
+[33mcommit 7f008e7c5cecc01e40b32e553f4d7356de8beb90[m
+Author: liuxing <2397514801@qq.com>
+Date:   Fri May 11 01:22:43 2018 +0800
+
+    second commit
+
+[33mcommit f7f54a13c469f61192dbe48466fc46891d217637[m
+Author: liuxing <2397514801@qq.com>
+Date:   Fri May 11 01:20:25 2018 +0800
+
+    first commit
+
+[33mcommit a996f82fb276e04365df7b37ba916d31d011df47[m
+Author: liuxing <gex1217@censng.com>
+Date:   Wed May 9 17:28:20 2018 +0800
+
+    first commit
