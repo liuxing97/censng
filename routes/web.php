@@ -143,9 +143,23 @@ Route::post('/order/webtemplate/return/post',function (){
     $ret = $obj -> checkNotify();
     if($ret){
         //支付成功，不返回任何页面
-        return true;
+        return;
     }else{
         //存在错误，调用逻辑处理并记录日志
-        return false;
+        return;
     }
+});
+Route::get('/return',function (){
+    $ret = 123;
+    $obj = new \App\Returns();
+    $obj -> value = $ret;
+    $obj -> save();
+    $ret = var_export($_POST,true);
+    $obj = new \App\Returns();
+    $obj -> value = $ret;
+    $obj -> save();
+    $ret = var_export($_GET,true);
+    $obj = new \App\Returns();
+    $obj -> value = $ret;
+    $obj -> save();
 });

@@ -13,25 +13,15 @@ use App\TemplateOrder;
 use AopClient;
 use AlipayTradePagePayRequest;
 //require_once("\..\..\libs\alipaySDK\AopSdk.php");
-//http://openapi.alipay.com/gateway.do?charset=utf-8&charset=utf-8&alipay_sdk=alipay-sdk-php-20161101&biz_content={ "product_code":"FAST_INSTANT_TRADE_PAY", "out_trade_no":"477005909", "subject":"辰象科技模板网站开发购买", "total_amount":"0.01", "body":"模板网站编号：083343;域名注册服务;jingji。", "goods_type":"0", "timeout_express":"1h" }&method=alipay.trade.page.pay&format=json&sign=p7bfhMmzHnLRiM9zs2UQXzsbBanTmNpGJ/dcnhsE8fr06Uj2IWrEi3Hr0ZTcYoIFkz/YHpz+RRODy3xum70CNboZyxN7jWkDWQvECfEtca1YGpkQhaelwSrtk18eHuT76Xrr2oJQZjV8RqFELoj7RQrP52rbuS+w2VKUmkEneuECWnq2ZsTwlGtWC0xhg2GDvlVaPu8FZPAAmDy/LWuKLgSQGw+wgZnuuMIyr1PV5uefBinPZZORP4gFyfCukpmVKqNO8GG3ij8ThqLt7P3g3asAYddJru2OeonAaklebJM47K9coaUNmnDj/k1Ec8vdiO1u/T4qa36emX17pKnVGw==&app_id=2018041502561560&version=1.0&sign_type=RSA2&timestamp=2018-07-01 12:18:52
-//TeH47LWm+uvZTzq2HXn91VBgZpsgYXU4w1pnqvdlGp9JuNTRnllZWEqOoCEqjhrnocvQ4jFaTZmIr7Xqckou0NJkV3GTTXLzhuOJSmLPlJ+UIsujDMG+8v7q0sRpOJKuGOPrBkvZQ8E6ZF9f6PlLRdsVIIY86d/19mYXiwxuClGPJviEbd50hxEI6ORF/WZ5qt7p5RuEVJiMH5v6m/iqbJWX1IbZ2ibv6J1cHnJO7wMM/be0cjspuG+XJ0nvh4307bDs/8GH3spZWG6nkssyd2Jc2Sw/v9qv7unA02FKJ5OGXcBquu/R7N4OpkBzCIIxOpeV4EyhZuuA6vL6xlpHSA==
-
-
 require_once("/web/site.censng.com/app/libs/alipaySDK/AopSdk.php");
 class WebTemplateOrder extends Controller
 {
     function payByAliPay($order,$muban,$price,$domain = null,$server = null){
-        $aop = new AopClient ();
-        $aop->gatewayUrl = 'https://openapi.alipay.com/gateway.do';
-        $aop->appId = '2018041502561560';
-        $aop->rsaPrivateKey = 'MIIEpAIBAAKCAQEAxzByOGz0HQuVfVxEAB/riAg8We2WZJkEAfC03vofSK7qG6XT37LdR6oAJFbV9qnN3YjBZNx6iwQaOBL6fbpq7kH6hQHZchax3v2Yb2xmW406J+MYrx/yRil7X4oSjY215RxR9kCrJcQMiYGT6V0J4N0FOM5We0Dzxu18R8LakyL4Hww2Z5B9hzk5Or74cxPPJl0rN1qTyfGtek4/J0RLkPSE0YZ97DOtqtQ8GvSxzw7442CzdD4aSEYBYGsOhvMpXk2s92IW+NtNPjWu8wiDavH17MAFon08DDidE+Lsvi42+KfCTzBCga2yu0v5bcoSQ0jBHQ8SnZ25wYXk6zJtBQIDAQABAoIBAQCOisHCVV3gBzEkM8nJ2Q3hHBusMxSjysiOZuXYh1+p0NphjKrxc3tc1HAjkSyuxtc2iK308r6TCw2EQTiWjrgE5pxTYH5uYYVKUWormoQpUghjEOXSNOdYhEjwlssuF1IqsbiJo7+WWBSstljV8CmojCI3g5lpvJJ3Me31IKDwFxnnM+xZqiauZDizVc0bDyJjEaZW0yP6/Iu8WzygIxsrB7Zwv1FGYvBqkj8a/OtIhRkgZ0lambpjNecctB0shDeS0bBOdmYMqmiPzIA0Y9KYn5GXIXn+7+tvC0LSw3bAAhp3NcgSlu1EMrAKi8fqEGoqYzNZb8UQguAA1E9oDgClAoGBAP1e+u5Di/HDT2L+s7CCrzaa/RzzbGChDq7dq2nY/4RUBOtkvzbcQoTJfFPWHOtzX26uoWN9P9+hHQxRJzWN8gHtSC++PwYRq/avmFX4xbQEHcONEfJ0U16a3wdkfVpY13vnBFyZXspIFvTfN6rHh9YzFVAARN2VwHVTF9zHxljLAoGBAMlBi4RtUrzVp3oV/szmHPudpQ4MxPH9Ubj47Hl2upPLx/TzgH8g5++S348oMNy2w8maruqOhCYieOVTJtHYiPTg/E0/TSBxc+E2uI2LPVc9jO8z3o/7anyTZBwH0tJbPytKDm6nnXjtrVxK4LG5B2KGdUuLFwRYL+KLhakXoSdvAoGBANER1MFSn2GJJjKrtR5LV8UZMw72llFN1M3aQB2BX6aTpdOPOHFOYt0rXRnYrdhjRTYRhz6PFWu0iEGnnVEFpdKNN2md9GdPobRWxL78HjcixmScPVjxP/HqnWp+Mymf8X9d6y11qNAFmFvK7SZQqvfHAykWb7zgWwT04dXeSv7tAoGAMqEpnxP9l4HMUxtLcXKGYgpDpqgxt4r5zyXYH6ptv5apZAcKEXFOx+dUFGiQ+kWENaiTTnCx8AIGFfL4NhxaP/iFoE1Hctz3wPWKMhmQQe07EkYjPGeMX3CY47BYKhFIb/R+cvn51J0+WpR/uFYK9I9M3MdN8ArbaQuegW5vXUMCgYAewAe0IeSPouXve92r18DFGgDsVZVP1C6R9DiDtCgSfmP9zGRFe15TUExMvyR2EzQaxpSqLPadSMsGGqGyFdOJgtBTx4z3c1JTqHLuINqWkdS8vl4JNLRophKE2xen9s3UnkJ+4HBP0HwFEJv2KFOGBZRO4usEL9pBJ7Frt69lAA==';
-        $aop->apiVersion = '1.0';
-        $aop->signType = 'RSA2';
-        $aop->postCharset= 'utf-8';
-        $aop->format='json';
-        $aop->alipayrsaPublicKey = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzByOGz0HQuVfVxEAB/riAg8We2WZJkEAfC03vofSK7qG6XT37LdR6oAJFbV9qnN3YjBZNx6iwQaOBL6fbpq7kH6hQHZchax3v2Yb2xmW406J+MYrx/yRil7X4oSjY215RxR9kCrJcQMiYGT6V0J4N0FOM5We0Dzxu18R8LakyL4Hww2Z5B9hzk5Or74cxPPJl0rN1qTyfGtek4/J0RLkPSE0YZ97DOtqtQ8GvSxzw7442CzdD4aSEYBYGsOhvMpXk2s92IW+NtNPjWu8wiDavH17MAFon08DDidE+Lsvi42+KfCTzBCga2yu0v5bcoSQ0jBHQ8SnZ25wYXk6zJtBQIDAQAB';
+        $alipay = new Alipay();
+        $aop = $alipay -> aop;
         $request = new AlipayTradePagePayRequest();
         $request->setReturnUrl('https://www.censng.com/order/webtemplate/return');
+//        $request->setReturnUrl('http://localhost:83/order/webtemplate/return');
         $request->setNotifyUrl('https://www.censng.com/order/webtemplate/return/post');
         $body = "模板网站编号：{$muban}";
         if($domain){
@@ -41,7 +31,7 @@ class WebTemplateOrder extends Controller
             $body = $body.";$server";
         }
         $body = $body."。";
-        $price = 0.01;
+        //$price = 0.01;
         $request->setBizContent('{
             "product_code":"FAST_INSTANT_TRADE_PAY",
             "out_trade_no":"'.$order.'",
@@ -108,10 +98,10 @@ class WebTemplateOrder extends Controller
     function saveOrderInfor($temNum,$name,$phone,$buyType,$enterpriseName,$enterpriseAdd,$validate,$payType,$domain,$server,$addPrice){
         ob_start();
         //验证验证码
-    //    $ret = $this->checkValidate($phone,$validate);
-    //    if(!$ret){
-    //        exit();
-    //    }
+        $ret = $this->checkValidate($phone,$validate);
+        if(!$ret){
+            exit();
+        }
         ob_clean();
         ob_end_flush();
         //写入订单
@@ -149,18 +139,22 @@ class WebTemplateOrder extends Controller
     }
     //校验异步通知
     function checkNotify(){
-        $arr=$_POST;
+        $returnObj = new Returns();
+        $returnObj -> value = $_POST['out_trade_no']." value：".var_export($_POST,true);
+        $returnObj -> save();
         $alipayObj = new \App\Http\Controllers\Alipay();
-        $result = $alipayObj->check($arr);
-        if($result) {//验证成功
+        $result = $alipayObj->check($_POST);
+        if($result) {
+            //验证成功
+            $returnObj = new Returns();
+            $returnObj -> value = $_POST['out_trade_no']." rsa2 is true";
+            $returnObj -> save();
             //商户订单号
             $out_trade_no = $_POST['out_trade_no'];
             //支付宝交易号
             $trade_no = $_POST['trade_no'];
             //交易金额
             $trade_amount = $_POST['total_amount'];
-            //交易状态
-            $trade_status = $_POST['trade_status'];
             //判断订单状态
             if($_POST['trade_status'] == 'TRADE_FINISHED') {
                 //判断该笔订单是否在商户网站中已经做过处理
@@ -174,8 +168,14 @@ class WebTemplateOrder extends Controller
                 $obj = new Returns();
                 $obj -> value = var_export($_POST,true);
                 $ret = $obj -> save();
+                $returnObj = new Returns();
+                $returnObj -> value = $_POST['out_trade_no'].' state is tradeFinished';
+                $returnObj -> save();
             }
             else if ($_POST['trade_status'] == 'TRADE_SUCCESS') {
+                $returnObj = new Returns();
+                $returnObj -> value = $_POST['out_trade_no'].' state is success';
+                $returnObj -> save();
                 //判断该笔订单是否在商户网站中已经做过处理
                 //如果没有做过处理，根据订单号（out_trade_no）在商户网站的订单系统中查到该笔订单的详细，并执行商户的业务程序
                 //请务必判断请求时的total_amount与通知时获取的total_fee为一致的
@@ -185,23 +185,41 @@ class WebTemplateOrder extends Controller
                 $ret = $this -> paySuccess($out_trade_no,$trade_amount,$trade_no);
                 //业务处理成功
                 if($ret == 'success'){
+                    $returnObj = new Returns();
+                    $returnObj -> value = $_POST['out_trade_no'].'state change success by notify';
+                    $returnObj -> save();
+                    echo 'success';
+                    return true;
+                }
+                else if($ret == 'successed'){
+                    $returnObj = new Returns();
+                    $returnObj -> value = $_POST['out_trade_no'].'state change success by return';
+                    $returnObj -> save();
                     echo 'success';
                     return true;
                 }
                 //业务处理失败
                 else{
+                    $returnObj = new Returns();
+                    $returnObj -> value = $_POST['out_trade_no'].' state change fail'." return = ".$ret;
+                    $returnObj -> save();
                     //既然已经收到，先给回复吧
                     echo "success";
                     return false;
                 }
             }
-
-        }else {
+        }
+        else {
+            $returnObj = new Returns();
+            $returnObj -> value = $_POST['out_trade_no'].' rsa2 is false';
+            $returnObj -> save();
             //验证失败
             echo "fail";
             return false;
         }
     }
+
+
     //检验同步通知
     function checkReturn(){
         $arr=$_GET;
@@ -214,8 +232,6 @@ class WebTemplateOrder extends Controller
             $trade_no = htmlspecialchars($_GET['trade_no']);
             //交易金额
             $trade_amount = htmlspecialchars($_GET['total_amount']);
-            //交易状态
-            $trade_status = htmlspecialchars($_POST['trade_status']);
             //验证成功
             $ret = $this -> paySuccess($out_trade_no,$trade_amount,$trade_no);
             if($ret == 'success'){
@@ -241,10 +257,13 @@ class WebTemplateOrder extends Controller
     function paySuccess($order,$total_amount,$aliOrder){
         $tOrderObj = new TemplateOrder();
         $tOrderObj = $tOrderObj ->where('order',$order)->first();
+        if(!$tOrderObj){
+            return $order.'not find';
+        }
         //如果已处理
         if($tOrderObj -> outOrder == $aliOrder && $total_amount == $tOrderObj -> addup && $tOrderObj -> paystate = 'success'){
             //返回已处理
-            return 'success';
+            return 'successed';
         }else{
             //更新支付宝订单号
             $tOrderObj -> outOrder = $aliOrder;
