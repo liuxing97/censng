@@ -17,6 +17,11 @@
 {{--头部--}}
 <div class="header">
     <div class="header-main">
+        <div style="background: rgba(108, 108, 108, 0.36) !important" class="header-logo">
+            <a href="/homepage">
+                <img src="/img/site.censng.com-logo.png" />
+            </a>
+        </div>
         <div class="min-menu">
             <div class="top">首页<span></span></div>
             <ul>

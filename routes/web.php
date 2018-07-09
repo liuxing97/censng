@@ -149,6 +149,9 @@ Route::post('/order/webtemplate/return/post',function (){
         return;
     }
 });
+Route::get('/order/success',function (){
+    return view('order/success');
+});
 Route::get('/return',function (){
     $ret = 123;
     $obj = new \App\Returns();
@@ -162,4 +165,19 @@ Route::get('/return',function (){
     $obj = new \App\Returns();
     $obj -> value = $ret;
     $obj -> save();
+});
+Route::get('/webtemplate/return',function (){
+    //查询是否支付成功
+    if(1){
+//        跳转到支付成功页面
+    }
+    else{
+        //跳转到支付异常页面
+    }
+});
+Route::get('/webtemplate/contract',function (){
+    return view('contract');
+});
+Route::get('/webtemplate/contract/{templateNum}',function (){
+    return view('contract');
 });

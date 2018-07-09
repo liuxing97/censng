@@ -33,7 +33,7 @@
     <div class="header-main">
         <div class="header-logo">
             <a href="/homepage">
-                <img src="/img/censng_build_84x84.png" />
+                <img src="/img/site.censng.com-logo.png" />
             </a>
         </div>
         <div class="menu">

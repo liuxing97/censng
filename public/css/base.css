@@ -69,8 +69,18 @@
 
 .header-logo{
     position: absolute;
-    left: -84px;
-    top: 26px;
+    left: 6em;
+    top: 0;
+    z-index: 99999999;
+    overflow: hidden;
+    /*background: indianred;*/
+    background: brown;
+    width: 176px;
+    padding: 4px 10px;
+    padding-top: 4px;
+    height: 99px;
+    padding-top: 25px;
+    box-sizing: border-box;
 }
 .header-logo img{
     max-width: 100%;
@@ -79,8 +89,9 @@
 .header{
     height: 138px;
     width: 100%;
-    background: #fff;
-    box-shadow: 0 0 10px #8a8a8a;
+    background: rgba(255,255,255,0.76);
+    /*box-shadow: 0 0 10px #8a8a8a;*/
+    box-shadow: 0 0 6px #8a8a8a;
     position: relative;
     z-index: 9999;
 }
@@ -102,6 +113,11 @@
     min-height: 500px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+@media screen and (max-width: 1300px){
+    .header-logo{
+        display: none;
+    }
 }
 @media screen and (max-width: 360px){
     .header{

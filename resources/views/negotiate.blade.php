@@ -5,11 +5,11 @@
     <link href="/css/negotiate.css" type="text/css" rel="stylesheet" />
 @endsection
 @section('myJs')
-    @if($objtype)
-        <script>var pageStatus = 'hasPara'</script>
-    @else
-        <script>var pageStatus = 'noPara'</script>
-    @endif
+    {{--@if($objtype)--}}
+        {{--<script>var pageStatus = 'hasPara'</script>--}}
+    {{--@else--}}
+        {{--<script>var pageStatus = 'noPara'</script>--}}
+    {{--@endif--}}
     {{--<script type="text/javascript" src="/js/pages/negotiate.js"></script>--}}
     {{--<script type="text/javascript" src="/plugins/SlidingLock/js/unlock.js"></script>--}}
 @endsection
@@ -24,8 +24,10 @@
         合作之间，只差 One Step
     </div>
     <div class="negotiateMain">
+        @section('contract')
+        @show
         {{--客服--}}
-        <div style="width:100%">
+        <div class="contactPhoneBlock" style="width:100%">
             <div class="kfdhMain" style="max-width: 1000px;margin: 0 auto;font-size: 28px;line-height: 4em;border-bottom: 1px solid #e5e5e5;color: #878787;">
                 <span>联系电话：029-8797 6807</span>
             </div>
