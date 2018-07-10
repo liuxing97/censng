@@ -64,31 +64,31 @@
             <ul class="muban_list">
                 <li>
                     <div class="img">
-                        <img src="/img/工业风模板.jpg"/>
+                        <img src="/img/gyf.jpg"/>
                     </div>
                     <p class="t">工业风</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/极光紫.jpg"/>
+                        <img src="/img/jgz.jpg"/>
                     </div>
                     <p class="t">极光紫</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/简约设计.jpg"/>
+                        <img src="/img/jysj.jpg"/>
                     </div>
                     <p class="t">简约设计</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/科技橘.jpg"/>
+                        <img src="/img/kjj.jpg"/>
                     </div>
                     <p class="t">科技橘</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/酷炫黑绿.jpg"/>
+                        <img src="/img/xklh.jpg"/>
                     </div>
                     <p class="t">酷炫黑绿</p>
                 </li>
@@ -391,7 +391,7 @@ margin-bottom: 88px;
         <div onclick="location.href = pageObj.jumpSrc;" class="goBuyButton">去洽谈</div>
     </div>
     <div class="footerBanner">
-        <img style="width: 100%;" src="img/宣传2.jpg"/>
+        <img style="width: 100%;" src="img/xc2.jpg"/>
         <div>
         </div>
     </div>
