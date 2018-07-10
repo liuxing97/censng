@@ -61,26 +61,39 @@
             <div class="contractPro">
                 <div class="t">《辰象的象网络科技模板网站购买条款》</div>
                 <div class="v">
-                    <p>以下为辰象的象网络科技（下称「本公司」）模板网站购买服务的有关条款(下称「本条款」)。</p>
-                    <p>在您购买服务前请先阅读，若不接受本条款，请不要使用本网站提供的服务。</p>
-                    <p>第一条  购买人委托本公司进行网站建设，过程中购买人配合本公司相关工作，提供必要的文字、图片等资料。</p>
-                    <p>第二条  本公司按规定要求在相应时间内完成网站的制作，款项支付完毕后将网站上传至购买者指定空间，提供网站的后台管理资料并在线指导购买者进行网站内容更新维护。</p>
+                    <p>Contract NO.合同编号： XXXXXXXXXX)</p>
+                    <p>甲方：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乙方：西安辰象的象网络科技有限公司</p>
+                    <p>地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：陕西省西安市雁塔区长安南路449号丽融大厦A座7层A-07C</p>
+                    <p>联系人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系人：</p>
+                    <p>电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：</p>
+
+                    <p>甲、乙双方，经友好协商，就甲方委托乙方进行网站建设事宜达成以下协议。双方申明，双方都已理解并认可了本合同的所有内容，同意承担各自应承担的权利和义务，忠实地履行本合同。</p>
+                    <p>第一条  甲方委托乙方进行网站建设，过程中甲方配合乙方相关工作，提供必要的文字、图片等资料。</p>
+                    <p>第二条  乙方按合同规定要求在相应时间内完成网站的制作，款项支付完毕后将网站上传至甲方指定空间，提供网站的后台管理资料并在线指导甲方进行网站内容更新维护。</p>
                     <p>第三条  双方须遵守对方相关保密资料，未经对方授权不得擅自出售、公开或传阅他人；否则造成的后果和损失由违约方承担。</p>
-                    <p>第四条  服务的执行声明</p>
-                    <p>1. 本公司免费维护网站，修改网站色调，指导购买者操作、管理网站后台（如需处理更新网站所有图片、文字资料单独收费具体看购买者提供资料报价）。</p>
-                    <p>2. 模板网站只能替换LOGO，图片，文字，和内容，不能更改模板网站板块，布局。本公司只负责网站维护，不负责整个网站内容填充（如需处理更新网站所有图片、文字资料单独收费具体看购买者提供资料报价）。</p>
-                    <p>3. 开发进度：</p>
-                    <p>(1)购买者支付款项，并提供网站所需要的资料后，本公司15个工作日完成网站设计，购买者确认后交付整个网站。</p>
-                    <p>(2)购买者7个工作日完成网站测试并提出修改意见（不包括网站页面颜色、框架结构、模块功能、同一个地方不能重复修改两次以上），本公司配合修改。</p>
-                    <p>(3)本公司完成网站上线发布，交付网站后台地址资料。</p>
-                    <p>4. 验收期限</p>
-                    <p>购买者必须在接到本公司通知3个工作日内完成验收并书面确认，如购买者在3工作日内无作出验收回应或修改意见，默认视作验收合格。</p>
-                    <p>5. 验收标准</p>
-                    <p>（1）购买者可以通过任何上网的计算机访问网站。</p>
-                    <p>（2）主页无文字拼写及图片（以购买者提供的材料为准）错误。</p>
+                    <p>第四条  合同的执行。</p>
+                    <p>1. 项目要求内容：</p>
+                    <p>（1）空间：________________</p>
+                    <p>（2）网站语言 中文/英文：_______</p>
+                    <p>（3）网站栏目及制作要求：</p>
+                    <p>网站模板编号:______________________；</p>
+                    <p>乙方免费维护网站，修改网站色调，指导甲方操作、管理网站后台（如需处理更新网站所有图片、文字资料单独收费具体看甲方提供资料报价）。</p>
+                    <p>2. 费用及付款方式：</p>
+                    <p>本项目涉及总金额为人民币（大写）___________元整（即：￥_______元）；双方协议签订之时，甲方须当天支付乙方付款（大写）___________元整（即：￥_______元）；</p>
+                    <p>3. 模板网站制作
+                    <p>模板网站只能替换LOGO，图片，文字，和内容，不能更改模板网站板块，布局。乙方只负责网站维护，不负责整个网站内容填充（如需处理更新网站所有图片、文字资料单独收费具体看甲方提供资料报价）。</p>
+                    <p>4. 开发进度：</p>
+                    <p>(1)甲方支付款项，并提供网站所需要的资料后，乙方   15   个工作日完成网站设计，甲方确认后交付整个网站。</p>
+                    <p>(2)甲方   7   个工作日完成网站测试并提出修改意见（不包括网站页面颜色、框架结构、模块功能、同一个地方不能重复修改两次以上），乙方配合修改。</p>
+                    <p>(3)乙方完成网站上线发布，交付网站后台地址资料。</p>
+                    <p>5. 验收期限：</p>
+                    <p>甲方必须在接到乙方通知   3  个工作日内完成验收并书面确认，如甲方在   3  工作日内无作出验收回应或修改意见，默认视作验收合格。</p>
+                    <p>6. 验收标准：</p>
+                    <p>（1）甲方可以通过任何上网的计算机访问网站。</p>
+                    <p>（2）主页无文字拼写及图片（以甲方提供的材料为准）错误。</p>
                     <p>（3）网站功能程序正常运行，可自行更换新闻、图片、内容文字。</p>
-                    <p>6. 售后时间：</p>
-                    <p>自验收完毕起一年时间内，为购买者提供售后服务！</p>
+                    <p>7. 年度续费：</p>
+                    <p>已含   1   年费用，有效期为合同签订之日起计算一年时间；到期后每年续费 700  元/年，包括   网站空间维护、域名维护，乙方收到后期续费后，合同期限自动延期。</p>
                     <p>第五条  售后服务</p>
                     <p>一、域名维护（针对在本司购买域名的用户）</p>
                     <p>域名维护主要指当域名出现故障时要及时提供备用解决方案，让网站能够临时正常访问，另外要尽快解决域名故障，恢复域名的正常使用和访问。</p>
@@ -93,9 +106,25 @@
                     <p>三、网站系统维护</p>
                     <p>包括网站访问故障解决：网站参数错误、病毒挂马处理、漏洞修复以及当网站误操作时，恢复到正常状态；涉及到网站的页面颜色、框架结构、模块功能改动时，双方将先协商解决。</p>
                     <p>四、人为损坏</p>
-                    <p>网站完成上线之后，经过购买者人为技术修改，出现的所有问题，本公司均不负责。</p>
-                    <p>第六条  违规违纪</p>
-                    <p>购买者严禁将本公司提供的技术服务用来进行违法违纪的活动，如出现此类情况，与本公司没有任何责任，本公司可随时单方面解除与购买者的服务关系，并对服务器、域名进行停用。</p>
+                    <p>网站完成上线之后，经过甲方人为技术修改，出现的所有问题，乙方均不负责。</p>
+                    <p>五、签订合同之后，甲方未在约定24小时内打款，此合同则无效！</p>
+                    <p>六、付款方式：</p>
+                    <p>（甲方）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（乙方）</p>
+                    <p>开户行：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户行：</p>
+                    <p>账号：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;帐号：</p>
+                    <p>账户名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账户名：</p>
+
+
+                    <p>附则：</p>
+                    <p>（1）本合同如有未尽事宜，经双方协商可签署补充合同，合同附件和补充合同以及扫描传真件都与该合同同具法律效率。</p>
+                    <p>（2）在合同有效期内双方产生争执，应先友好协商解决，无法解决的可通过法律程序解决。</p>
+                    <p>（3）本合同一式两份，甲乙双方各执一份，经双方签字盖章后生效。</p>
+
+                    <p>甲方（盖章）：____________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乙方（盖章）：____________________________</p>
+
+                    <p>甲方代表签名：____________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乙方代表签名：____________________________</p>
+                    <p>日期（手写）：____________________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日期（手写）：____________________________</p>
+
                 </div>
             </div>
             {{--<div class="contactContractTitle">联系信息</div>--}}
