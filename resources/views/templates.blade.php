@@ -11,10 +11,10 @@
 @section("pageMain")
     {{--Banner--}}
     <div class="banner">
-        <img style="max-width: 100%" src="img/banner0624.png" />
+        <img style="max-width: 100%" src="img/banner0624.jpg" />
         <div style="display: none" class="bannerItem">
             <div class="img-computer">
-                <img src="img/0623.png" />
+                <img src="img/0623.jpg" />
             </div>
             {{--<div class="showBox">--}}
                 {{--<div class="showBoxMain">--}}

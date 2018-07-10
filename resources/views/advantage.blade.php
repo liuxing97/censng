@@ -6,7 +6,7 @@
 
 @section('pageMain')
     {{--我们不仅仅是一家技术公司--}}
-    <div class="banner06" style="margin: 0 auto;"><img style="width: 100%" src="/img/06162.png" /></div>
+    <div class="banner06" style="margin: 0 auto;"><img style="width: 100%" src="/img/06162.jpg" /></div>
     {{--6个优势--}}
     <div style="background: #9e9e9e33;
 color: #545454;

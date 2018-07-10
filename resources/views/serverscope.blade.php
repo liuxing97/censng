@@ -30,7 +30,7 @@
             </div>
             <div onclick="pageObj.scopeSwitch('zonghe');location.href='#choicedAbout4'" class="serverTypeClass serverTypeClassZonghe">
                 <div class="serverTypeClassLogo">
-                    <img src="/img/7.bmp" />
+                    <img src="/img/7.jpg" />
                 </div>
                 <div class="serverTypeTitle">综合开发</div>
             </div>
@@ -64,31 +64,31 @@
             <ul class="muban_list">
                 <li>
                     <div class="img">
-                        <img src="/img/工业风模板.png"/>
+                        <img src="/img/工业风模板.jpg"/>
                     </div>
                     <p class="t">工业风</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/极光紫.png"/>
+                        <img src="/img/极光紫.jpg"/>
                     </div>
                     <p class="t">极光紫</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/简约设计.png"/>
+                        <img src="/img/简约设计.jpg"/>
                     </div>
                     <p class="t">简约设计</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/科技橘.png"/>
+                        <img src="/img/科技橘.jpg"/>
                     </div>
                     <p class="t">科技橘</p>
                 </li>
                 <li>
                     <div class="img">
-                        <img src="/img/酷炫黑绿.png"/>
+                        <img src="/img/酷炫黑绿.jpg"/>
                     </div>
                     <p class="t">酷炫黑绿</p>
                 </li>
@@ -142,8 +142,8 @@ margin-top: 30px;">业务</span>
                 <p style="line-height: 1.5em;font-size: 14px;margin-top: 2em">未知的总是让人好奇的，联系我们，一起研究业务与互联网的结合方案，或许会发生很有趣的事</p>
             </div>
         </div>
-        <div class="banner-001" style="text-align: center;margin-top: 180px;margin-bottom: 180px">
-            <img style="max-width: 100%" src="img/banner001.png" />
+        <div class="banner-001" style="text-align: center;max-width: 1000px;margin: 180px auto;">
+            <img style="max-width: 100%" src="img/banner001.jpg" />
         </div>
     </div>
     {{--选择服务介绍--}}
@@ -259,7 +259,7 @@ margin-top: 30px;">业务</span>
         <div>
             <div class="app_one">
                 <div class="app_title">定制开发</div>
-                <div class="app_one_img"><img src="img/app_banner2.png" /></div>
+                <div class="app_one_img"><img src="img/app_banner2.gif" /></div>
                 <div class="app_dingzhi_about">
                     <div class="t">为什么我们只提到了定制开发?</div>
                     <div class="msg">
@@ -350,7 +350,7 @@ margin: 0 auto;
 
 margin-top: 80px;
 ">
-                <img style="width: 100%" src="/img/0616.png" />
+                <img style="width: 100%" src="/img/0616.jpg" />
             </div>
             <div class="zh_smallTitle">综合开发 全面打造用户体验</div>
             <div style="margin-bottom: 88px" class="zh_dapei">
@@ -382,7 +382,7 @@ margin: 0 auto;
 margin-top: 80px;
 margin-bottom: 88px;
 ">
-                <img style="width: 100%" src="/img/06161.png" />
+                <img style="width: 100%" src="/img/06161.jpg" />
             </div>
         </div>
     </div>
@@ -391,7 +391,7 @@ margin-bottom: 88px;
         <div onclick="location.href = pageObj.jumpSrc;" class="goBuyButton">去洽谈</div>
     </div>
     <div class="footerBanner">
-        <img style="width: 100%;" src="img/宣传2.png"/>
+        <img style="width: 100%;" src="img/宣传2.jpg"/>
         <div>
         </div>
     </div>

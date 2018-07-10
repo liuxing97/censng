@@ -62,7 +62,7 @@
     <div class="banner-bg-box"></div>
     <div class="banner-container">
         <div class="cover"></div>
-        <img src="img/banner-1.png" />
+        <img src="img/banner-1.jpg" />
     </div>
     <!--Logo及宣传语-->
     <div class="censngShow">

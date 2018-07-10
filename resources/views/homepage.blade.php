@@ -57,7 +57,7 @@
 <div class="banner">
     <div class="banner-bg-box"></div>
     <div class="banner-container">
-        <img src="img/banner-1.png" />
+        <img src="img/banner-1.jpg" />
     </div>
     <!--Logo及宣传语-->
     <div class="censngShow">
@@ -248,7 +248,7 @@
         <a href="/serverscope">
             <div class="serverTypeClass serverTypeClassZonghe">
                 <div class="serverTypeClassLogo">
-                    <img src="/img/7.bmp" />
+                    <img src="/img/7.jpg" />
                 </div>
                 <div class="serverTypeTitle">综合开发</div>
             </div>
