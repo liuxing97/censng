@@ -10,7 +10,7 @@
     {{--@else--}}
         {{--<script>var pageStatus = 'noPara'</script>--}}
     {{--@endif--}}
-    {{--<script type="text/javascript" src="/js/pages/negotiate.js"></script>--}}
+    <script type="text/javascript" src="/js/pages/negotiate.js"></script>
     {{--<script type="text/javascript" src="/plugins/SlidingLock/js/unlock.js"></script>--}}
 @endsection
 
@@ -185,26 +185,26 @@
                     <div style="text-align: center;margin-top: 42px;">
                         <div class="online-item">
                             <span class="t">联系人</span>
-                            <span class="v"><input type="text"></span>
+                            <span class="v"><input class="jsNameDom" type="text"></span>
                         </div>
                         <div class="online-item">
                             <span class="t">单位名称</span>
-                            <span class="v"><input type="text"></span>
+                            <span class="v"><input class="jsCompanyDom" type="text"></span>
                         </div>
                         <div class="online-item">
                             <span class="t">您的职位</span>
-                            <span class="v"><input type="text"></span>
+                            <span class="v"><input class="jsPostDom" type="text"></span>
                         </div>
                         <div class="online-item">
                             <span class="t">怎么称呼</span>
-                            <span class="v"><input type="text"></span>
+                            <span class="v"><input class="jsNicknameDom" type="text"></span>
                         </div>
                         <div class="online-item">
                             <span class="t">问题描述</span>
-                            <span class="v"><textarea></textarea></span>
+                            <span class="v"><textarea class="jsDescribeDom"></textarea></span>
                         </div>
                     </div>
-                    <div class="onlinePostMobile">提交</div>
+                    <div onclick="contact.postMsg()" class="onlinePostMobile">提交</div>
                     <style>
                         .online-item{
                             position: relative;
@@ -245,7 +245,7 @@
                     </style>
                 </div>
             </div>
-            <div class="onlinePost" style="
+            <div onclick="contact.postMsg()" class="onlinePost" style="
                 position: absolute;
                 top: 45%;
                 background: #3f3f3f66;

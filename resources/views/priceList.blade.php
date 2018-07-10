@@ -37,7 +37,7 @@
                         <p>故而比顶级的定制开发更显实惠</p>
                         <p>期待您的联系！</p>
                     </div>
-                    <a><div class="p-w-m-i-button">定制模板</div></a>
+                    <a href="/negotiate"><div class="p-w-m-i-button">定制模板</div></a>
                 </div>
                 <div class="p-w-m-item">
                     {{--<div class="p-w-m-i-icon"></div>--}}
@@ -50,7 +50,7 @@
                         <p>我们是专业的</p>
                         <p>……</p>
                     </div>
-                    <a><div class="p-w-m-i-button">立即咨询</div></a>
+                    <a href="/negotiate"><div class="p-w-m-i-button">立即咨询</div></a>
                 </div>
             </div>
         </div>

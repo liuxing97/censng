@@ -41,6 +41,7 @@ function is_mobile()
     }
 }
 Route::get('/', function () {
+//    return 1;
     return view('homepage');
 });
 Route::get('/index', function () {
@@ -125,33 +126,6 @@ Route::post('/buy/order/webtemplate',function (){
     $ret = $orderObj -> saveOrderInfor($temNum,$name,$phone,$buyType,$enterpriseName,$enterpriseAdd,$validate,$payType,$domain,$server,$addPrice);
 //    return json_encode($ret);
 });
-Route::get('/order/webtemplate/return',function (){
-    $obj = new \App\Http\Controllers\WebTemplateOrder();
-    $ret = $obj -> checkReturn();
-    if($ret){
-        echo "支付成功";
-        //支付成功页面
-//        return view();
-    }else{
-        echo "遇到错误";
-        //错误页面，存在错误
-//        return view();
-    }
-});
-Route::post('/order/webtemplate/return/post',function (){
-    $obj = new \App\Http\Controllers\WebTemplateOrder();
-    $ret = $obj -> checkNotify();
-    if($ret){
-        //支付成功，不返回任何页面
-        return;
-    }else{
-        //存在错误，调用逻辑处理并记录日志
-        return;
-    }
-});
-Route::get('/order/success',function (){
-    return view('order/success');
-});
 Route::get('/return',function (){
     $ret = 123;
     $obj = new \App\Returns();
@@ -166,18 +140,155 @@ Route::get('/return',function (){
     $obj -> value = $ret;
     $obj -> save();
 });
-Route::get('/webtemplate/return',function (){
-    //查询是否支付成功
-    if(1){
+Route::group(['prefix'=>'order'],function(){
+    Route::get('success',function (){
+        return view('order/success');
+    });
+    Route::post('webtemplate/return/post',function (){
+        $obj = new \App\Http\Controllers\WebTemplateOrder();
+        $ret = $obj -> checkNotify();
+        if($ret){
+            //支付成功，不返回任何页面
+            return;
+        }else{
+            //存在错误，调用逻辑处理并记录日志
+            return;
+        }
+    });
+    Route::get('webtemplate/return',function (){
+        $obj = new \App\Http\Controllers\WebTemplateOrder();
+        $ret = $obj -> checkReturn();
+        if($ret){
+            echo "支付成功";
+            //支付成功页面
+//        return view();
+        }else{
+            echo "遇到错误";
+            //错误页面，存在错误
+//        return view();
+        }
+    });
+    Route::post('/webtemplate/contract/step=post',function (){
+        $name = \Illuminate\Support\Facades\Input::get('name');
+        $company = \Illuminate\Support\Facades\Input::get('company');
+        $post = \Illuminate\Support\Facades\Input::get('post');
+        $nickname = \Illuminate\Support\Facades\Input::get('nickname');
+        $more = \Illuminate\Support\Facades\Input::get('more');
+        $data = [
+            'name' => $name,
+            'company' => $company,
+            'post' => $post,
+            'nickname' => $nickname,
+            'more' => $more,
+        ];
+        $noticeObj = new \App\Notice();
+        $noticeObj -> type = 'template/web/order/contract';
+        $noticeObj -> describe = json_encode($data,true);
+        $ret = $noticeObj -> save();
+        if($ret){
+            $ret = [
+                'msg' => '数据库保存成功',
+                'state' => 'success',
+                'time' => time()
+            ];
+        }else{
+            $ret = [
+                'msg' => '数据库保存失败',
+                'state' => 'fail',
+                'time' => time()
+            ];
+        }
+//        echo json_encode($ret);
+        return $ret;
+    });
+    Route::post('/webtemplate/customized/step=post',function (){
+        $name = \Illuminate\Support\Facades\Input::get('name');
+        $company = \Illuminate\Support\Facades\Input::get('company');
+        $post = \Illuminate\Support\Facades\Input::get('post');
+        $nickname = \Illuminate\Support\Facades\Input::get('nickname');
+        $more = \Illuminate\Support\Facades\Input::get('more');
+        $data = [
+            'name' => $name,
+            'company' => $company,
+            'post' => $post,
+            'nickname' => $nickname,
+            'more' => $more,
+        ];
+        $noticeObj = new \App\Notice();
+        $noticeObj -> type = 'template/web/order/customized';
+        $noticeObj -> describe = json_encode($data,true);
+        $ret = $noticeObj -> save();
+        if($ret){
+            $ret = [
+                'msg' => '数据库保存成功',
+                'state' => 'success',
+                'time' => time()
+            ];
+        }else{
+            $ret = [
+                'msg' => '数据库保存失败',
+                'state' => 'fail',
+                'time' => time()
+            ];
+        }
+//        echo json_encode($ret);
+        return $ret;
+    });
+    Route::post('/consult',function (){
+        $name = \Illuminate\Support\Facades\Input::get('name');
+        $company = \Illuminate\Support\Facades\Input::get('company');
+        $post = \Illuminate\Support\Facades\Input::get('post');
+        $nickname = \Illuminate\Support\Facades\Input::get('nickname');
+        $describe = \Illuminate\Support\Facades\Input::get('describe');
+        $data = [
+            'name' => $name,
+            'company' => $company,
+            'post' => $post,
+            'nickname' => $nickname,
+            'describe' => $describe,
+        ];
+        $noticeObj = new \App\Notice();
+        $noticeObj -> type = 'consult';
+        $noticeObj -> describe = json_encode($data,true);
+        $ret = $noticeObj -> save();
+        if($ret){
+            $ret = [
+                'msg' => '数据库保存成功',
+                'state' => 'success',
+                'time' => time()
+            ];
+        }else{
+            $ret = [
+                'msg' => '数据库保存失败',
+                'state' => 'fail',
+                'time' => time()
+            ];
+        }
+//        echo json_encode($ret);
+        return $ret;
+    });
+});
+Route::group(['prefix'=>'webtemplate'],function(){
+    Route::get('contract',function (){
+        return view('contract');
+    });
+    Route::get('contract/{templateNum}',function ($templateNum){
+        return view('contract',[
+            'templateNum'=>$templateNum
+        ]);
+    });
+    Route::get('return',function (){
+        //查询是否支付成功
+        if(1){
 //        跳转到支付成功页面
-    }
-    else{
-        //跳转到支付异常页面
-    }
-});
-Route::get('/webtemplate/contract',function (){
-    return view('contract');
-});
-Route::get('/webtemplate/contract/{templateNum}',function (){
-    return view('contract');
+        }
+        else{
+            //跳转到支付异常页面
+        }
+    });
+    Route::get('customized/{templateNum}',function ($templateNum){
+        return view('webTemplateCustomized',[
+            'templateNum'=>$templateNum
+        ]);
+    });
 });

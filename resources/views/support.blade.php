@@ -80,13 +80,13 @@
 <div class="beforemarket">
     <div class="beformarketTitle">售前服务</div>
     <div class="beforemarket-m">
-        <div class="b-m-item">
+        <a style="color: rgb(51, 51, 51);" href="/negotiate"><div class="b-m-item">
             <div class="b-m-i-icon"></div>
             <div class="b-m-i-msg">
                 <div class="b-m-i-m-t">业务咨询</div>
                 <div class="b-m-i-m-v">购买前，如果您还存在什么疑问，请联系我们！我们将安排业务人员竭心为您解答。</div>
             </div>
-        </div>
+            </div></a>
         <div class="b-m-item">
             <div class="b-m-i-icon jjfa"></div>
             <div class="b-m-i-msg">

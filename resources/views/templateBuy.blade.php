@@ -74,8 +74,8 @@ margin-top: 3em;
 {{--top: -2.5em;--}}
 {{--color: #b4b4b4;">* 购买仅包含程序代码，购买后自行决定是否需要搭配域名、空间，使用我司域名及空间，我司为之提供相应售后服务</div>--}}
                 <div onclick="buyOnline('show')" class="i">在线购买</div>
-                <div class="i">合同购买</div>
-                <div class="i">定制化本模板</div>
+                <a href="/webtemplate/contract/{{$number}}"><div class="i">合同购买</div></a>
+                <a href="/webtemplate/customized/{{$number}}"><div class="i">定制化本模板</div></a>
             </div>
             <div class="buyTypeAbout">
                 <p>在线购买：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子声明，当您同意后，您可以直接付款购买，我们将在15日内为您准备好您的所需（购买页选择是否需要域名、服务器空间）。</p>

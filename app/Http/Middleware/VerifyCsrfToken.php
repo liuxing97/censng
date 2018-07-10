@@ -14,6 +14,7 @@ class VerifyCsrfToken extends BaseVerifier
     protected $except = [
         '/order/webtemplate/return',
         '/order/webtemplate/return/post',
-        '/return'
+        '/return',
+        '/order/webtemplate/contract/step=post'
     ];
 }
