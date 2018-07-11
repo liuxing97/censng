@@ -38,7 +38,7 @@ class GetClientIp
         // 存储到数据库
         $noticeObj = new Notice();
         $noticeObj -> type = 'client';
-        $noticeObj -> describe = $ip;
+        $noticeObj -> describe = $ip.'------http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
         $noticeObj -> save();
         return $next($request);
     }
