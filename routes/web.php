@@ -292,3 +292,6 @@ Route::group(['prefix'=>'webtemplate'],function(){
         ]);
     });
 });
+Route::get('/huodong',function (){
+    return view('huodong');
+});
